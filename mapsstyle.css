@@ -92,6 +92,7 @@
 
 .galtitle{
     text-align: center;
+    align-items: center;
 }
 
 .galtitle h2{
@@ -102,6 +103,7 @@
 .imggalery{
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .imggalery p{
