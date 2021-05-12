@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: valorant;
+    src: url(font/Valorant\ Font.ttf);
+}
+@font-face {
+    font-family: quantico;
+    src: url(font/Quantico-Regular.ttf);
+}
+@font-face {
+    font-family: righteous;
+    src: url(font/Righteous-Regular.ttf);
+}
+#header{
+    width: 1920px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#body{
+    max-width: 1920px;
+    margin: auto;
+    background-color: rgba(179, 85, 207, 0.555);
+}
+
+#body p{
+    color: white;
+}
+
+.title{
+    padding: 2rem 4rem;
+    font-family: valorant;
+    font-size: 112px;
+    /* color: white; */
+}
+
+.slider-outer{
+    display: flex;
+    padding: 1rem;
+}
+
+.arrow img{
+    width: 96px;
+}
+
+.prev, .next{
+    float: left;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    margin-top: 280px;
+}
+
+.slider-inner .slide{
+    display: none;
+}
+
+.slider-inner .active{
+    display: flex;
+}
+
+.slide{
+    /* padding: 4rem 8rem; */
+    display: flex;
+    /* align-items: center; */
+}
+
+.slide-left{
+    font-family: quantico;
+    width: 600px;
+}
+
+.agent-name{
+    font-size: 72px;
+    padding-bottom: 32px;
+    line-height: 2;
+}
+
+.desc{
+    font-size: 40px;
+    text-align: justify;
+}
+
+.slide-mid{
+    margin-left: 40px;
+}
+
+.slide-mid img{
+    height: 700px;
+}
+
+.slide-right{
+    width: 600px;
+    font-family: righteous;
+    padding-top: 32px;
+    text-align: center;
+}
+
+.ability-title{
+    font-size: 72px;
+    
+}
+
+.abilities{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    pointer-events: none;
+}
+
+.card1, .card2, .card3, .card4{
+    /* width: 160px;
+    height: 160px; */
+    padding: 2rem 0;
+    pointer-events: auto;
+    position: relative;
+}
+
+
+
