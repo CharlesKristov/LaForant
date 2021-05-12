@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    pading:0;
+}
+
+.body{
+    width: 1170px;
+    margin:0 auto;
+}
+
+.bodytop{
+    display:flex;
+    flex-direction: row;
+    border-bottom:5px solid black;
+}
+
+.bodytitle{
+    text-align:center;
+}
+
+.bodylist{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.list{
+    border: 5px solid black;
+}
+
+.list p{
+    padding:5px;
+}
+
+.bodydesc{
+    display:flex;
+    flex-direction: row;
+}
+
+.desctitle{
+    background-color: purple;
+}
+
+.desctitle h2{
+    padding:5px;
+    color:white;
+}
+
+.descbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descimg img{
+    width: 360px;
+}
+
+.desctxt{
+    text-align: left;
+}
