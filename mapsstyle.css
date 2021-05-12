@@ -84,6 +84,11 @@
     text-align: center;
 }
 
+.imgblue img{
+    margin:20px;
+    width: 680px;
+}
+
 .bodygal{
     display: flex;
     flex-direction: column;
@@ -108,8 +113,13 @@
 
 .imggalery{
     align-items: center;
+    margin: 20px;
 }
 
 .imggalery p{
     margin-top:5px;
+}
+
+.imggalery img{
+    width: 480px;
 }
