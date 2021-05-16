@@ -115,6 +115,7 @@ a{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     pointer-events: none;
+    position: relative;
 }
 
 .card1, .card2, .card3, .card4{
@@ -122,8 +123,23 @@ a{
     height: 160px; */
     padding: 2rem 0;
     pointer-events: auto;
-    position: relative;
 }
 
+.overlay1, .overlay2, .overlay3, .overlay4{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
 
+.abilityName{
+    padding-bottom: 1rem;
+    font-size: 40px;
+}
 
+.abilityDesc{
+    font-size: 28px;
+}
