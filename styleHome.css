@@ -45,30 +45,68 @@ a > img{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
+    padding: 0rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 5rem;
     background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper-navbar{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Quantico';
+    font-size: 18.72px;
 }
 
-.wrapper-navbar a{
-    font-size: 18.72px;
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 2rem;
-    position: relative;
+}
+
+.wrapper-navbar .navbar-text, .logo{
     color: #9575ff;
-    font-family: 'Quantico';
 }
 
 i{
     margin-left: 0.5rem;
-    color: #BDBDBD;
+    color: #9575ff;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-wrapper{
+    display: none;
+    left: 0;
+    top: 5rem;
+    width: 250%;
+    position: absolute;
+    background-color: #9575ff;
+    box-shadow:0 8px 15px -2px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content{
+    padding: 1rem 2rem;
+    display: block;
+    font-family: 'Quantico';
+    color: white;
+}
+
+.dropdown:hover .dropdown-wrapper{
+    display: block;
+}
+
+.navbar-text:hover, .navbar-text:hover i{
+    color: #a93bf4;
+}
+
+.dropdown-content:hover{
+    background-color: #a93bf4;
 }
 
 .wrapper-button-navbar{
@@ -342,6 +380,39 @@ i{
     z-index: 1;
 }
 
+.wrapper-slide-image{
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image{
+    display: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slide-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.2} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.2} 
+    to {opacity: 1}
+}
+
 .image{
     background-color: #dddddd;
     position: relative;
@@ -350,6 +421,11 @@ i{
 
 .detail-image{
     width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'righteous';
+    color: white;
     height: 35%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -359,6 +435,7 @@ i{
     opacity: 0;
     transition: 0.5s;
     z-index: 2;
+    padding: 1.5rem;
 }
 
 .image:hover .detail-image{
@@ -418,19 +495,31 @@ i{
     margin-left: 0;
 }
 
-.board-text-detail{
+.board-text-more{
     margin: 1rem 0rem;
     overflow-y: scroll; 
     height: 75%;
 }
 
-.board-text-detail h3{
+.board-text-more a{
+    color: white;
+    font-size: 18.72px;
+    font-family: 'righteous';
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0.7rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     width: 95%;
+}
+
+.board-text-more a:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.board-text-more a span{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .wrapper-count{
@@ -442,33 +531,3 @@ i{
     z-index: 2;
 }
 
-.wrapper-slide-image{
-    width: 100%;
-    height: 100%;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1s;
-}
-
-@keyframes fade {
-    from {opacity: 0.2} 
-    to {opacity: 1}
-}
-
-.slide-image{
-    display: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slide-image img{
-    width: 100%;
-    height: 100%;
-}

@@ -11,21 +11,37 @@
 <body>
     <header>
         <div class="wrapper-navbar">
-            <a class="logo" href="index.html">
+            <a class="logo flex" href="index.html">
                 <img src="assets/home/logolaforant.png" alt="Logo Laforant">
             </a>
-            <a href="index.html">
+            <a class="navbar-text flex" href="index.html">
                 Home
             </a>
-            <a href="index.html">
-                Maps
-                <i class="fa fa-caret-down"></i>
-            </a>
-            <a href="index.html">
-                Agents
-                <i class="fa fa-caret-down"></i>
-            </a>
-            <a href="index.html">
+            <div class="dropdown flex">
+                <a class="navbar-text" href="maps.html">
+                    Maps
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-wrapper">
+                    <a class="dropdown-content" href="maps.html">BREEZE</a>
+                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                    <a class="dropdown-content" href="maps.html">BIND</a>
+                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                </div>
+            </div>
+            <div class=" dropdown flex">
+                <a class="navbar-text" href="agents.html">
+                    Agents
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-wrapper">
+                    <a class="dropdown-content" href="maps.html">BREEZE</a>
+                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                    <a class="dropdown-content" href="maps.html">BIND</a>
+                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                </div>
+            </div>
+            <a class="navbar-text flex" href="index.html">
                 System Requirements
             </a>
         </div>
@@ -61,17 +77,20 @@
                 <div class="board image">
                     <h4 class="wrapper-count"><span class="count">1</span>/3</h4>
                     <article class="wrapper-slide-image">
-                        <a class="slide-image fade" href="#">
+                        <a class="slide-image" href="#">
                             <img src="assets/home/breeze-map.jpeg" alt="Slide Image">
                         </a>
-                        <a class="slide-image fade" href="#">
+                        <a class="slide-image" href="#">
                             <img src="assets/home/astra.jpg" alt="Slide Image">
                         </a>
-                        <a class="slide-image fade" href="#">
+                        <a class="slide-image" href="#">
                             <img src="assets/home/escalation.jpg" alt="Slide Image">
                         </a>
                     </article>
-                    <div class="detail-image"></div>
+                    <div class="detail-image">
+                        <h2 class="detail-image-text"></h2>
+                        <h4 class="detail-image-date"></h4>
+                    </div>
                     <div class="button-image">
                         <button id="left"><i class="fa fa-caret-left"></i></button><button id="right"><i class="fa fa-caret-right"></i></button>
                     </div>
@@ -80,8 +99,7 @@
                     <div class="board-text-wrapper">
                         <h2 class="board-text-content">More</h2>
                     </div>
-                    <div class="board-text-detail">
-                        
+                    <div class="board-text-more">
                     </div>
                 </div>
             </div>
