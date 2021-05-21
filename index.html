@@ -4,11 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaForant</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Laforant</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>test test masuk gaaaa</h1>
-    <a href="maps.html">MAPS</a>
+    <header>
+        <div class="wrapper-navbar">
+            <a class="logo flex" href="index.html">
+                <img src="assets/home/logolaforant.png" alt="Logo Laforant">
+            </a>
+            <a class="navbar-text flex" href="index.html">
+                Home
+            </a>
+            <div class="dropdown flex">
+                <a class="navbar-text" href="maps.html">
+                    Maps
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-wrapper">
+                    <a class="dropdown-content" href="maps.html">BREEZE</a>
+                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                    <a class="dropdown-content" href="maps.html">BIND</a>
+                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                </div>
+            </div>
+            <div class=" dropdown flex">
+                <a class="navbar-text" href="agents.html">
+                    Agents
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-wrapper">
+                    <a class="dropdown-content" href="maps.html">BREEZE</a>
+                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                    <a class="dropdown-content" href="maps.html">BIND</a>
+                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                </div>
+            </div>
+            <a class="navbar-text flex" href="index.html">
+                System Requirements
+            </a>
+        </div>
+        <div class="wrapper-button-navbar">
+            <div class="border-button-navbar">
+                <a class="button-a" href="#">PRE REGISTER NOW</a>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <section class="pre-reg">
+            <div class="title">
+                La<br>Forant
+                <div class="sub-title">
+                    A 5v5 character-based tactical shooter
+                </div>
+                <div class="title-button">
+                    <div class="title-border-button">
+                        <a class="title-button-a" href="#">
+                            PRE REGISTER NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="img-omen" src="assets/home/Omen_artwork.png" alt="Omen Image">
+            <div class="triangle"></div>
+        </section>
+        <section class="news">
+            <div class="title">
+                <h1 class="purple">LATEST <span class="white">NEWS</span></h1>
+            </div>
+            <div class="board-wrapper">
+                <div class="board image">
+                    <h4 class="wrapper-count"><span class="count">1</span>/3</h4>
+                    <article class="wrapper-slide-image">
+                        <a class="slide-image" href="#">
+                            <img src="assets/home/breeze-map.jpeg" alt="Slide Image">
+                        </a>
+                        <a class="slide-image" href="#">
+                            <img src="assets/home/astra.jpg" alt="Slide Image">
+                        </a>
+                        <a class="slide-image" href="#">
+                            <img src="assets/home/escalation.jpg" alt="Slide Image">
+                        </a>
+                    </article>
+                    <div class="detail-image">
+                        <h2 class="detail-image-text"></h2>
+                        <h4 class="detail-image-date"></h4>
+                    </div>
+                    <div class="button-image">
+                        <button id="left"><i class="fa fa-caret-left"></i></button><button id="right"><i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+                <div class="board NT">
+                    <div class="board-text-wrapper">
+                        <h2 class="board-text-content">More</h2>
+                    </div>
+                    <div class="board-text-more">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
