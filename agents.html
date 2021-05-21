@@ -6,14 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaForant - Maps</title>
     <link rel="stylesheet" href="styleAgents.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="assets/logolaforant.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="jsAgents.js"></script>
 </head>
 <body>
-    <div id="header">
-        
-    </div>
+    <header>
+        <div class="wrapper-navbar">
+            <a class="logo flex" href="index.html">
+                <img src="assets/home/logolaforant.png" alt="Logo Laforant">
+            </a>
+            <a class="navbar-text flex" href="index.html">
+                Home
+            </a>
+            <div class="dropdown flex">
+                <a class="navbar-text" href="maps.html">
+                    Maps
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-wrapper">
+                    <a class="dropdown-content" href="maps.html">BREEZE</a>
+                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                    <a class="dropdown-content" href="maps.html">BIND</a>
+                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                </div>
+            </div>
+            <div class=" dropdown flex">
+                <a class="navbar-text" href="agents.html">
+                    Agents
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-wrapper">
+                    <a class="dropdown-content" href="maps.html">BREEZE</a>
+                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                    <a class="dropdown-content" href="maps.html">BIND</a>
+                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                </div>
+            </div>
+            <a class="navbar-text flex" href="index.html">
+                System Requirements
+            </a>
+        </div>
+        <div class="wrapper-button-navbar">
+            <div class="border-button-navbar">
+                <a class="button-a" href="#">PRE REGISTER NOW</a>
+            </div>
+        </div>
+    </header>
 
     <div id="body">
         <div class="title">
@@ -24,633 +63,1113 @@
                 <img src="assets/agents/arrow-left_500x500.png" alt="" class="prev">
             </div>
             <div class="slider-inner">
-                <div class="slide active">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>BRIMSTONE</p>
-                            <hr color="white" size="10">
+                <div class="slide active firstSlide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>BRIMSTONE</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. 
+                                    His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.
+                                </p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <p>
-                                Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. 
-                                His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.
-                            </p>
+                        <div class="slide-mid">
+                            <img src="assets/agents/brimstone.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/brimstone-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/brimstone-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/brimstone-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/brimstone-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/brimstone-1.png" alt="">
+                                    <p class="abilityName">C - Stim Beacon</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a stim beacon. FIRE to toss the stim beacon in front of Brimstone. 
+                                        Upon landing, the stim beacon will create a field that grants players RapidFire.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/brimstone-2.png" alt="">
+                                    <p class="abilityName">Q - Incendiary</p>
+                                    <p class="abilityDesc">
+                                        EQUIP an incendiary grenade launcher. FIRE to launch a grenade that 
+                                        detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/brimstone-3.png" alt="">
+                                    <p class="abilityName">E - Sky Smoke</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a tactical map. FIRE to set locations where Brimstone’s smoke clouds will land. 
+                                        ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/brimstone-4.png" alt="">
+                                    <p class="abilityName">X - Orbital Strike</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at 
+                                        the selected location, dealing high damage-over-time to players caught in the selected area.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/brimstone.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1 yes">
-                                <img src="assets/agents/brimstone-1.png" alt="">
-                            </div>
-                            <div class="card2 yes">
-                                <img src="assets/agents/brimstone-2.png" alt="">
-                            </div>
-                            <div class="card3 yes">
-                                <img src="assets/agents/brimstone-3.png" alt="">
-                            </div>
-                            <div class="card4 yes">
-                                <img src="assets/agents/brimstone-4.png" alt="">
-                            </div>
-                            <div class="overlay1">
-                                <img src="assets/agents/brimstone-1.png" alt="">
-                                <p class="abilityName">C - Stim Beacon</p>
-                                <p class="abilityDesc">
-                                    EQUIP a stim beacon. FIRE to toss the stim beacon in front of Brimstone. 
-                                    Upon landing, the stim beacon will create a field that grants players RapidFire.
-                                </p>
-                            </div>
-                            <div class="overlay2">
-                                <img src="assets/agents/brimstone-2.png" alt="">
-                                <p class="abilityName">Q - Incendiary</p>
-                                <p class="abilityDesc">
-                                    EQUIP an incendiary grenade launcher. FIRE to launch a grenade that 
-                                    detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.
-                                </p>
-                            </div>
-                            <div class="overlay3">
-                                <img src="assets/agents/brimstone-3.png" alt="">
-                                <p class="abilityName">E - Sky Smoke</p>
-                                <p class="abilityDesc">
-                                    EQUIP a tactical map. FIRE to set locations where Brimstone’s smoke clouds will land. 
-                                    ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.
-                                </p>
-                            </div>
-                            <div class="overlay4">
-                                <img src="assets/agents/brimstone-4.png" alt="">
-                                <p class="abilityName">X - Orbital Strike</p>
-                                <p class="abilityDesc">
-                                    EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at 
-                                    the selected location, dealing high damage-over-time to players caught in the selected area.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>1/15</p>
                     </div>
                 </div>
         
                 <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>PHOENIX</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. 
-                                Whether he's got backup or not, he'll rush into a fight on his own terms.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/phoenix.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1 yes">
-                                <img src="assets/agents/phoenix-1.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>PHOENIX</p>
+                                <hr color="white" size="10">
                             </div>
-                            <div class="card2 yes">
-                                <img src="assets/agents/phoenix-2.png" alt="">
-                            </div>
-                            <div class="card3 yes">
-                                <img src="assets/agents/phoenix-3.png" alt="">
-                            </div>
-                            <div class="card4 yes">
-                                <img src="assets/agents/phoenix-4.png" alt="">
-                            </div>
-                            <div class="overlay1">
-                                <img src="assets/agents/phoenix-1.png" alt="">
-                                <p class="abilityName">C - Blaze</p>
-                                <p class="abilityDesc">
-                                    EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire 
-                                    that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.
-                                </p>
-                            </div>
-                            <div class="overlay2">
-                                <img src="assets/agents/phoenix-2.png" alt="">
-                                <p class="abilityName">Q - Curveball</p>
-                                <p class="abilityDesc">
-                                    EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare 
-                                    orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.
-                                </p>
-                            </div>
-                            <div class="overlay3">
-                                <img src="assets/agents/phoenix-3.png" alt="">
-                                <p class="abilityName">E - Hot Hands</p>
-                                <p class="abilityDesc">
-                                    EQUIP a fireball. FIRE to throw a fireball that explodes after a set 
-                                    amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.
-                                </p>
-                            </div>
-                            <div class="overlay4">
-                                <img src="assets/agents/phoenix-4.png" alt="">
-                                <p class="abilityName">X - Run It Back</p>
-                                <p class="abilityDesc">
-                                    INSTANTLY place a marker at Phoenix’s location. While this ability is active, dying or allowing the timer to 
-                                    expire will end this ability and bring Phoenix back to this location with full health.
+                            <div class="desc">
+                                <p>
+                                    Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. 
+                                    Whether he's got backup or not, he'll rush into a fight on his own terms.
                                 </p>
                             </div>
                         </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/phoenix.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/phoenix-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/phoenix-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/phoenix-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/phoenix-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/phoenix-1.png" alt="">
+                                    <p class="abilityName">C - Blaze</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire 
+                                        that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/phoenix-2.png" alt="">
+                                    <p class="abilityName">Q - Curveball</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare 
+                                        orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/phoenix-3.png" alt="">
+                                    <p class="abilityName">E - Hot Hands</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a fireball. FIRE to throw a fireball that explodes after a set 
+                                        amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/phoenix-4.png" alt="">
+                                    <p class="abilityName">X - Run It Back</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY place a marker at Phoenix’s location. While this ability is active, dying or allowing the timer to 
+                                        expire will end this ability and bring Phoenix back to this location with full health.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>2/15</p>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>SAGE</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                The stronghold of China, Sage creates safety for herself and her team wherever she goes. 
-                                Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/sage.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/sage-1.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>SAGE</p>
+                                <hr color="white" size="10">
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/sage-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/sage-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/sage-4.png" alt="">
+                            <div class="desc">
+                                <p>
+                                    The stronghold of China, Sage creates safety for herself and her team wherever she goes. 
+                                    Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.
+                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>SOVA</p>
-                            <hr color="white" size="10">
+                        <div class="slide-mid">
+                            <img src="assets/agents/sage.png" alt="">
                         </div>
-                        <div class="desc">
-                            <p>
-                                Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. 
-                                His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/sova.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/sova-1.png" alt="">
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/sova-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/sova-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/sova-4.png" alt="">
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/sage-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/sage-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/sage-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/sage-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/sage-1.png" alt="">
+                                    <p class="abilityName">C - Barrier Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a barrier orb. FIRE places a solid wall. ALT FIRE rotates the targeter.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/sage-2.png" alt="">
+                                    <p class="abilityName">Q - Slow Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, 
+                                        creating a lingering field that slows players caught inside of it.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/sage-3.png" alt="">
+                                    <p class="abilityName">E - Healing Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a 
+                                        heal-over-time on them. ALT FIRE while Sage is damaged to activate a self heal-over-time.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/sage-4.png" alt="">
+                                    <p class="abilityName">X - Resurrection</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to 
+                                        begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>VIPER</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                The American chemist, Viper deploys an array of poisonous chemical devices to control the 
-                                battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/viper.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/viper-1.png" alt="">
-                            </div>
-                            <div class="card2">
-                                <img src="assets/agents/viper-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/viper-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/viper-4.png" alt="">
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>3/15</p>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>CYPHER</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the 
-                                enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/cypher.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/cypher-1.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>SOVA</p>
+                                <hr color="white" size="10">
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/cypher-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/cypher-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/cypher-4.png" alt="">
+                            <div class="desc">
+                                <p>
+                                    Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. 
+                                    His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.
+                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>REYNA</p>
-                            <hr color="white" size="10">
+                        <div class="slide-mid">
+                            <img src="assets/agents/sova.png" alt="">
                         </div>
-                        <div class="desc">
-                            <p>
-                                Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. 
-                                Her capability is only limited by her raw skill, making her highly dependent on performance.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/reyna.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/reyna-1.png" alt="">
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/reyna-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/reyna-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/reyna-4.png" alt="">
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/sova-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/sova-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/sova-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/sova-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/sova-1.png" alt="">
+                                    <p class="abilityName">C - Owl Drone</p>
+                                    <p class="abilityDesc">
+                                        EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, 
+                                        FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/sova-2.png" alt="">
+                                    <p class="abilityName">Q - Shock Bolt</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a bow with a shock bolt. FIRE to send the explosive forward, detonating upon collision and damaging players nearby. 
+                                        HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/sova-3.png" alt="">
+                                    <p class="abilityName">E - Recon Bolt</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a bow with a recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. 
+                                        HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/sova-4.png" alt="">
+                                    <p class="abilityName">X - Hunter’s Fury</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a bow with three long-range wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line. 
+                                        This ability can be RE-USED up to two more times while the ability timer is active.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>KILLJOY</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. 
-                                If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/killjoy.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/killjoy-1.png" alt="">
-                            </div>
-                            <div class="card2">
-                                <img src="assets/agents/killjoy-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/killjoy-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/killjoy-4.png" alt="">
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>4/15</p>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>BREACH</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively
-                                 clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/breach.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/breach-1.png" alt="">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>VIPER</p>
+                                <hr color="white" size="10">
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/breach-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/breach-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/breach-4.png" alt="">
+                            <div class="desc">
+                                <p>
+                                    The American chemist, Viper deploys an array of poisonous chemical devices to control the 
+                                    battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will.
+                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>OMEN</p>
-                            <hr color="white" size="10">
+                        <div class="slide-mid">
+                            <img src="assets/agents/viper.png" alt="">
                         </div>
-                        <div class="desc">
-                            <p>
-                                A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, 
-                                teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/omen.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/omen-1.png" alt="">
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/omen-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/omen-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/omen-4.png" alt="">
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/viper-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/viper-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/viper-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/viper-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/viper-1.png" alt="">
+                                    <p class="abilityName">C - Snake Bite</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a chemical launcher. FIRE to launch a canister 
+                                        that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/viper-2.png" alt="">
+                                    <p class="abilityName">Q - Poison Cloud</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a 
+                                        toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/viper-3.png" alt="">
+                                    <p class="abilityName">E - Toxic Screen</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a gas emitter launcher. FIRE to deploy a long line of gas emitters. 
+                                        RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/viper-4.png" alt="">
+                                    <p class="abilityName">X - Viper’s Pit</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, 
+                                        creating a large cloud that reduces the vision range and maximum health of players inside of it.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>JETT</p>
-                            <hr color="white" size="10">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                Representing her home country of South Korea, Jett's agile and evasive fighting style lets her 
-                                take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/jett.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/jett-1.png" alt="">
-                            </div>
-                            <div class="card2">
-                                <img src="assets/agents/jett-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/jett-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/jett-4.png" alt="">
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>5/15</p>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>RAZE</p>
-                            <hr color="white" size="10">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>CYPHER</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the 
+                                    enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.
+                                </p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <p>
-                                Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle,
-                                 she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”
-                            </p>
+                        <div class="slide-mid">
+                            <img src="assets/agents/cypher.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/cypher-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/cypher-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/cypher-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/cypher-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/cypher-1.png" alt="">
+                                    <p class="abilityName">C - Trapwire</p>
+                                    <p class="abilityDesc lonkBoi">
+                                        EQUIP a trapwire. FIRE to place a destructible and covert tripwire at the targeted location creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be tethered, revealed, 
+                                        and dazed after a short period if they do not destroy the device in time. This ability can be picked up to be REDEPLOYED.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/cypher-2.png" alt="">
+                                    <p class="abilityName">Q - Cyber Cage</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY toss the cyber cage in front of Cypher. 
+                                        Activate to create a zone that blocks vision and slows enemies who pass through it.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/cypher-3.png" alt="">
+                                    <p class="abilityName">E - Spycam</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a spycam. FIRE to place the spycam at the targeted location. RE-USE this ability to take control of the camera’s view. While in control of the camera, 
+                                        FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/cypher-4.png" alt="">
+                                    <p class="abilityName">X - Neural Theft</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY use on a dead enemy player in your crosshairs to reveal the location of all living enemy players.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/raze.png" alt="">
+                    <div class="slide-bottom">
+                        <p>6/15</p>
                     </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/raze-1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>REYNA</p>
+                                <hr color="white" size="10">
                             </div>
-                            <div class="card2">
-                                <img src="assets/agents/raze-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/raze-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/raze-4.png" alt="">
+                            <div class="desc">
+                                <p>
+                                    Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. 
+                                    Her capability is only limited by her raw skill, making her highly dependent on performance.
+                                </p>
                             </div>
                         </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/reyna.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/reyna-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/reyna-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/reyna-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/reyna-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/reyna-1.png" alt="">
+                                    <p class="abilityName">C - Leer</p>
+                                    <p class="abilityDesc">
+                                        EQUIP an ethereal destructible eye. 
+                                        ACTIVATE to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/reyna-2.png" alt="">
+                                    <p class="abilityName">Q - Devour</p>
+                                    <p class="abilityDesc">
+                                        Enemies killed by Reyna leave behind Soul Orbs that last 3 seconds. INSTANTLY consume a nearby soul orb, rapidly healing for a short duration. Health gained through this skill exceeding 100 will decay over time. 
+                                        If EMPRESS is active, this skill will automatically cast and not consume the orb.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/reyna-3.png" alt="">
+                                    <p class="abilityName">E - Dismiss</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY consume a nearby soul orb, becoming intan
+                                        gible for a short duration. If EMPRESS is active, also become invisible.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/reyna-4.png" alt="">
+                                    <p class="abilityName">X - Empress</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY enter a frenzy, increasing firing speed, 
+                                        equip and reload speed dramatically. Scoring a kill renews the duration.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>7/15</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>KILLJOY</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. 
+                                    If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/killjoy.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/killjoy-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/killjoy-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/killjoy-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/killjoy-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/killjoy-1.png" alt="">
+                                    <p class="abilityName">C - Nanoswarm</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a Nanoswarm grenade. FIRE to throw the grenade. 
+                                        Upon landing, the Nanoswarm goes covert. ACTIVATE the Nanoswarm to deploy a damaging swarm of nanobots.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/killjoy-2.png" alt="">
+                                    <p class="abilityName">Q - Slow Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, 
+                                        creating a lingering field that slows players caught inside of it.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/killjoy-3.png" alt="">
+                                    <p class="abilityName">E - Turret</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a Turret. FIRE to deploy a turret 
+                                        that fires at enemies in a 180 degree cone. HOLD EQUIP to recall the deployed turret.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/killjoy-4.png" alt="">
+                                    <p class="abilityName">X - Lockdown</p>
+                                    <p class="abilityDesc">
+                                        EQUIP the Lockdown device. FIRE to deploy the device. After a long windup, 
+                                        the device Detains all enemies caught in the radius. The device can be destroyed by enemies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>8/15</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>BREACH</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively
+                                     clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/breach.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/breach-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/breach-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/breach-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/breach-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/breach-1.png" alt="">
+                                    <p class="abilityName">C - Aftershock</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a fusion charge. FIRE the charge to set a 
+                                        low-acting burst through the wall. The burst does heavy damage to anyone caught in its area.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/breach-2.png" alt="">
+                                    <p class="abilityName">Q - Flashpoint</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a blinding charge. FIRE the charge to set fast-acting burst through the wall. 
+                                        The charge detonates to blind all players looking at it.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/breach-3.png" alt="">
+                                    <p class="abilityName">E - Fault Line</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a seismic blast. HOLD FIRE to increase the distance. 
+                                        RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/breach-4.png" alt="">
+                                    <p class="abilityName">X - Rolling Thunder</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a seismic charge. FIRE to send a cascading quake 
+                                        through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>9/15</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>OMEN</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, 
+                                    teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/omen.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/omen-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/omen-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/omen-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/omen-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/omen-1.png" alt="">
+                                    <p class="abilityName">C - Shrouded Step</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a shadow walk ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location..
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/omen-2.png" alt="">
+                                    <p class="abilityName">Q - Paranoia</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY fire a shadow projectile forward, 
+                                        briefly reducing the vision range of all players it touches. This projectile can pass straight through walls.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/omen-3.png" alt="">
+                                    <p class="abilityName">E - Dark Cover</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a shadow orb and see its range indicator. FIRE to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD ALTERNATE 
+                                        FIRE while targeting to move the marker further away. HOLD the ability key with targeting to move the market closer.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/omen-4.png" alt="">
+                                    <p class="abilityName">X - From The Shadows</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a tactical map. FIRE to begin teleporting to the selected location. 
+                                        While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>10/15</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>JETT</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Representing her home country of South Korea, Jett's agile and evasive fighting style lets her 
+                                    take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/jett.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/jett-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/jett-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/jett-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/jett-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/jett-1.png" alt="">
+                                    <p class="abilityName">C - Cloudburst</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. 
+                                        HOLD the ability key to curve the smoke in the direction of your crosshair.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/jett-2.png" alt="">
+                                    <p class="abilityName">Q - Updraft</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY propel Jett high into the air.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/jett-3.png" alt="">
+                                    <p class="abilityName">E - Tailwind</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY propel Jett in the direction she is moving. If Jett is standing still, she will propel forward.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/jett-4.png" alt="">
+                                    <p class="abilityName">X - Blade Storm</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a set of highly accurate knives that recharge on killing an opponent. 
+                                        FIRE to throw a single knife at your target. ALTERNATE FIRE to throw all remaining daggers at your target.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>11/15</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>RAZE</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle,
+                                     she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide-mid">
+                            <img src="assets/agents/raze.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/raze-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/raze-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/raze-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/raze-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/raze-1.png" alt="">
+                                    <p class="abilityName">C - Boom Bot</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a Boom Bot. FIRE will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any 
+                                        enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/raze-2.png" alt="">
+                                    <p class="abilityName">Q - Blast Pack</p>
+                                    <p class="abilityDesc">
+                                        INSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit. 
+                                        Raze isn't damaged by this ability, but will still take fall damage if launched up far enough.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/raze-3.png" alt="">
+                                    <p class="abilityName">E - Paint Shells</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a cluster grenade. FIRE to throw the grenade, 
+                                        which does damage and creates sub-munitions, each doing damage to anyone in their range.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/raze-4.png" alt="">
+                                    <p class="abilityName">X - Showstopper</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a rocket launcher. FIRE shoots a rocket that does massive area damage on contact with anything.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <p>12/15</p>
                     </div>
                 </div>
 
                 <div class="slide"> 
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>SKYE</p>
-                            <hr color="white" size="10">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>SKYE</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her 
+                                    creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s side.
+                                </p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <p>
-                                Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her 
-                                creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s side.
-                            </p>
+                        <div class="slide-mid">
+                            <img src="assets/agents/skye.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/skye-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/skye-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/skye-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/skye-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/skye-1.png" alt="">
+                                    <p class="abilityName">C - Regrowth</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a healing trinket. HOLD FIRE to channel, healing allies in range and line of sight. 
+                                        Can be reused until her healing pool is depleted. Skye cannot heal herself.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/skye-2.png" alt="">
+                                    <p class="abilityName">Q - Trailblazer</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a Tasmanian tiger trinket. FIRE to send out and take control of the predator. 
+                                        While in control, FIRE to leap forward, exploding in a concussive blast and damaging directly hit enemies.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/skye-3.png" alt="">
+                                    <p class="abilityName">E - Guiding Light</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a hawk trinket. FIRE to send it forward. HOLD FIRE to guide the hawk in the direction of your crosshair. RE-USE while the hawk is in flight to 
+                                        transform it into a flash that plays a hit confirm if an enemy was within range and line of sight.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/skye-4.png" alt="">
+                                    <p class="abilityName">X - Seekers</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a Seeker trinket. FIRE to send out three Seekers to 
+                                        track down the three closest enemies. If a Seeker reaches its target, it nearsights them.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/skye.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/skye-1.png" alt="">
-                            </div>
-                            <div class="card2">
-                                <img src="assets/agents/skye-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/skye-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/skye-4.png" alt="">
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>13/15</p>
                     </div>
                 </div>
 
                 <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>YORU</p>
-                            <hr color="white" size="10">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>YORU</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. 
+                                    Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.
+                                </p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <p>
-                                Japanese native, Yoru, rips holes straight through reality to infiltrate enemy lines unseen. 
-                                Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.
-                            </p>
+                        <div class="slide-mid">
+                            <img src="assets/agents/yoru.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes">
+                                    <img src="assets/agents/yoru-1.png" alt="">
+                                </div>
+                                <div class="card2 yes">
+                                    <img src="assets/agents/yoru-2.png" alt="">
+                                </div>
+                                <div class="card3 yes">
+                                    <img src="assets/agents/yoru-3.png" alt="">
+                                </div>
+                                <div class="card4 yes">
+                                    <img src="assets/agents/yoru-4.png" alt="">
+                                </div>
+                                <div class="overlay1">
+                                    <img src="assets/agents/yoru-1.png" alt="">
+                                    <p class="abilityName">C - Fakeout</p>
+                                    <p class="abilityDesc">
+                                        EQUIP an echo that mimics footsteps when activated FIRE to activate and send the echo forward 
+                                        ALT FIRE to place an echo in place USE the inactive echo to send it forward.
+                                    </p>
+                                </div>
+                                <div class="overlay2">
+                                    <img src="assets/agents/yoru-2.png" alt="">
+                                    <p class="abilityName">Q - Blindside</p>
+                                    <p class="abilityDesc">
+                                        EQUIP to rip an unstable dimensional fragment from reality. FIRE to throw the fragment, 
+                                        activating a flash that winds up once it collides with a hard surface in the world.
+                                    </p>
+                                </div>
+                                <div class="overlay3">
+                                    <img src="assets/agents/yoru-3.png" alt="">
+                                    <p class="abilityName">E - Gatecrash</p>
+                                    <p class="abilityDesc">
+                                        EQUIP to harness a rift tether FIRE to send the tether out moving 
+                                        forward ALT FIRE to place a tether in place ACTIVATE to teleport to the tether's location.
+                                    </p>
+                                </div>
+                                <div class="overlay4">
+                                    <img src="assets/agents/yoru-4.png" alt="">
+                                    <p class="abilityName">X - Dimensional Drift</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a mask that can see between dimensions. 
+                                        FIRE to drift into Yoru's dimension, unable to be affected or seen by enemies from the outside.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/yoru.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/yoru-1.png" alt="">
-                            </div>
-                            <div class="card2">
-                                <img src="assets/agents/yoru-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/yoru-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/yoru-4.png" alt="">
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>14/15</p>
                     </div>
                 </div>
 
-                <div class="slide">
-                    <div class="slide-left">
-                        <div class="agent-name">
-                            <p>ASTRA</p>
-                            <hr color="white" size="10">
+                <div class="slide lastSlide">
+                    <div class="slide-top">
+                        <div class="slide-left">
+                            <div class="agent-name">
+                                <p>ASTRA</p>
+                                <hr color="white" size="10">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command 
+                                    of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.
+                                </p>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <p>
-                                Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command 
-                                of her astral form and a talent for deep strategic foresight, she's always eons ahead of her enemy's next move.
-                            </p>
+                        <div class="slide-mid">
+                            <img src="assets/agents/astra.png" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="ability-title">
+                                <p>ABILITIES</p>
+                            </div>
+                            <div class="abilities">
+                                <div class="card1 yes astraLargeBoi">
+                                    <img src="assets/agents/astra-1.png" alt="">
+                                </div>
+                                <div class="card2 yes astraLargeBoi">
+                                    <img src="assets/agents/astra-2.png" alt="">
+                                </div>
+                                <div class="card3 yes astraLargeBoi">
+                                    <img src="assets/agents/astra-3.png" alt="">
+                                </div>
+                                <div class="card4 yes astraLargeBoi">
+                                    <img src="assets/agents/astra-4.png" alt="">
+                                </div>
+                                <div class="overlay1 astraLargeBoiDesc">
+                                    <img src="assets/agents/astra-1.png" alt="">
+                                    <p class="abilityName">C - Barrier Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a barrier orb. FIRE places a solid wall. ALT FIRE rotates the targeter.
+                                    </p>
+                                </div>
+                                <div class="overlay2 astraLargeBoiDesc">
+                                    <img src="assets/agents/astra-2.png" alt="">
+                                    <p class="abilityName">Q - Slow Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, 
+                                        creating a lingering field that slows players caught inside of it.
+                                    </p>
+                                </div>
+                                <div class="overlay3 astraLargeBoiDesc">
+                                    <img src="assets/agents/astra-3.png" alt="">
+                                    <p class="abilityName">E - Healing Orb</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a 
+                                        heal-over-time on them. ALT FIRE while Sage is damaged to activate a self heal-over-time.
+                                    </p>
+                                </div>
+                                <div class="overlay4 astraLargeBoiDesc">
+                                    <img src="assets/agents/astra-4.png" alt="">
+                                    <p class="abilityName">X - Resurrection</p>
+                                    <p class="abilityDesc">
+                                        EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to 
+                                        begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide-mid">
-                        <img src="assets/agents/astra.png" alt="">
-                    </div>
-                    <div class="slide-right">
-                        <div class="ability-title">
-                            <p>ABILITIES</p>
-                        </div>
-                        <div class="abilities">
-                            <div class="card1">
-                                <img src="assets/agents/astra-1.png" alt="">
-                            </div>
-                            <div class="card2">
-                                <img src="assets/agents/astra-2.png" alt="">
-                            </div>
-                            <div class="card3">
-                                <img src="assets/agents/astra-3.png" alt="">
-                            </div>
-                            <div class="card4">
-                                <img src="assets/agents/astra-4.png" alt="">
-                            </div>
-                        </div>
+                    <div class="slide-bottom">
+                        <p>15/15</p>
                     </div>
                 </div>
-
-
             </div>
             <div class="arrow">
                 <img src="assets/agents/arrow-right_500x500.png" alt="" class="next">
             </div>
         </div>
-
-        
     </div>
 
     <div id="footer">
@@ -658,7 +1177,3 @@
     </div>
 </body>
 </html>
-
-<!-- TODO:
-add icon
-add ability name and desc for sage onwards -->
