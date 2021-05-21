@@ -84,7 +84,7 @@ i{
     display: none;
     left: 0;
     top: 5rem;
-    width: 250%;
+    width: 12rem;
     position: absolute;
     background-color: #9575ff;
     box-shadow:0 8px 15px -2px rgba(0, 0, 0, 0.2);
@@ -325,19 +325,22 @@ i{
     padding: 2rem 4rem 13rem 4rem;
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 
 .news::after{
-    content: '';
-    width: 100%;
-    height: 200%;
-    background-color: #a93bf4;
+    content: 'LAFORANT';
     position: absolute;
-    transform: skew(15deg);
-    top: 0;
-    right: -67.3%;
-    box-shadow: 4px 16px 30px 10px rgba(0, 0, 0, 0.4);
-    z-index: -2;
+    font-size: 255pt;
+    top: 15rem;
+    left: -5rem;
+    color: #9575ff;
+    font-family: 'quantico';
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #9575ff;
+    z-index: -1;
+    transform: rotate(30deg);
 }
 
 .news .title{
@@ -348,14 +351,6 @@ i{
     text-align: center;
 }
 
-.white{
-    color: white;
-}
-
-.purple{
-    color: #9575ff;
-}
-
 .board-wrapper{
     display: flex;
     justify-content: center;
@@ -364,7 +359,7 @@ i{
 }
 
 .board{
-    width: 40%;
+    width: 35em;
     height: 25rem;
 }
 
@@ -373,9 +368,9 @@ i{
     width: 150%;
     height: 100%;
     position: absolute;
-    background-color: rgba(149, 117, 255, 0.4);
+    background-color: rgba(149, 117, 255, 0.5);
     transform: skew(-15deg);
-    left: -60rem;
+    left: -80rem;
     transition: 0.5s;
     z-index: 1;
 }
@@ -531,3 +526,9 @@ i{
     z-index: 2;
 }
 
+
+/* SECTION 3 */
+
+.agents div{
+    opacity: 0;
+}

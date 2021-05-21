@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    const getUrl = new URL(window.location.href).searchParams.get('agents') || 0, putActive = Array.from(document.querySelectorAll('.slide'));
+
+    for(let i = 0; i < putActive.length; i++){
+        if(i == getUrl){
+            putActive[i].classList.add('active');
+        }
+    }
+
     $('.next').on('click', function(){
         var currImg = $('.active');
         var nextImg = currImg.next();
