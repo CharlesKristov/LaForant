@@ -10,20 +10,28 @@ $(document).ready(function(){
     $('.next').on('click', function(){
         var currImg = $('.active');
         var nextImg = currImg.next();
-
+        var firstImg = $('.firstSlide');
         if(nextImg.length){
             currImg.removeClass('active').css('z-index', -10);
             nextImg.addClass('active').css('z-index', 10);
+        }
+        else{
+            currImg.removeClass('active').css('z-index', -10);
+            firstImg.addClass('active').css('z-index', 10);
         }
     });
 
     $('.prev').on('click', function(){
         var currImg = $('.active');
         var prevImg = currImg.prev();
-
+        var lastImg = $('.lastSlide');
         if(prevImg.length){
             currImg.removeClass('active').css('z-index', -10);
             prevImg.addClass('active').css('z-index', 10);
+        }
+        else{
+            currImg.removeClass('active').css('z-index', -10);
+            lastImg.addClass('active').css('z-index', 10);
         }
     });
 
@@ -36,6 +44,7 @@ $(document).ready(function(){
         delet.addClass('yes').css('opacity', 0);
         delet.addClass('yes').css('transition', "0.5s");
         overlay1.addClass('overlay1').css('opacity', 1);
+        // overlay1.addClass('overlay1').css('background-color', "rgba(110, 54, 128, 0.555)")
         
     }, function(){
         delet.addClass('yes').css('opacity', "100%");
@@ -73,4 +82,3 @@ $(document).ready(function(){
     });
 
 });
-
