@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laforant</title>
+    <link rel="icon" href="assets/laforant-ico.ico">
     <link rel="stylesheet" href="styleHome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -34,11 +35,11 @@
                     Agents
                     <i class="fa fa-caret-down"></i>
                 </a>
-                <div class="dropdown-wrapper">
-                    <a class="dropdown-content" href="maps.html">BREEZE</a>
-                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
-                    <a class="dropdown-content" href="maps.html">BIND</a>
-                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                <div id="agents-dropdown" class="dropdown-wrapper">
+                    <a class="dropdown-content" href="agents.html?agents=10">JETT</a>
+                    <a class="dropdown-content" href="agents.html?agents=6">REYNA</a>
+                    <a class="dropdown-content" href="agents.html?agents=1">PHOENIX</a>
+                    <a class="dropdown-content" href="agents.html">VIEW MORE AGENTS</a>
                 </div>
             </div>
             <a class="navbar-text flex" href="index.html">
@@ -71,7 +72,7 @@
         </section>
         <section class="news">
             <div class="title">
-                <h1 class="purple">LATEST <span class="white">NEWS</span></h1>
+                <h1>LATEST NEWS</h1>
             </div>
             <div class="board-wrapper">
                 <div class="board image">
@@ -100,6 +101,28 @@
                         <h2 class="board-text-content">More</h2>
                     </div>
                     <div class="board-text-more">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="agents">
+            <div class="agents-image-wrapper">
+                <img src="assets/home/jett.png" alt="Jett image" class="image-jett">
+                <img src="assets/home/raze.png" alt="Raze image" class="image-raze">
+            </div>
+            <div class="agents-title-wrapper">
+                <h1 class="agents-title">
+                    YOUR<br>AGENTS
+                </h1>
+                <h3 class="agents-sub-title">CREATIVITY IS YOUR GREATEST WEAPON.</h3>
+                <h4 class="agents-detail">
+                    More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same
+                </h4>
+                <div class="agents-button">
+                    <div class="agents-border-button">
+                        <a href="agents.html" class="agents-button-a">
+                            VIEW ALL AGENTS
+                        </a>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ $(document).ready(function(){
             putActive[i].classList.add('active');
         }
     }
-    
+
     $('.next').on('click', function(){
         var currImg = $('.active');
         var nextImg = currImg.next();

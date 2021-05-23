@@ -85,9 +85,9 @@ left.addEventListener('click', () =>{
     count.innerHTML = temp + 1;
 })
 
-console.log(detailNews);
 function sliderDetail(){
     detailNews.forEach( e => {
         boardDetail.innerHTML += `<a href="`+e.url+`" target="_blank">`+ e.title +`<span class=text-detail-date>`+ e.date +`</span></a>`
     });
 }
+
