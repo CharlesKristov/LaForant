@@ -177,8 +177,10 @@ i{
 
 #body{
     margin: auto;
-    /* background-color: rgba(179, 85, 207, 0.555); */
-    background-color: #a93bf4;
+    background-image: url('assets/agents/bgAgents.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 
@@ -190,13 +192,11 @@ i{
     padding: 2rem 4rem;
     font-family: valorant;
     font-size: 60px;
-    /* color: white; */
 }
 
 .slider-outer{
     display: flex;
     padding: 1rem;
-
 }
 
 .arrow img{
@@ -227,8 +227,6 @@ i{
 
 .slide{
     padding: 4rem 2rem;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .slide-top{
@@ -261,7 +259,6 @@ i{
 .slide-mid{
     margin-left: 40px;
     text-align: center;
-    /* width: 30%; */
 }
 
 .slide-mid img{
@@ -340,6 +337,9 @@ i{
 
 @media screen and (max-width: 800px){
     #body{
+        max-width: 800px;
+    }
+    .slide-top{
         display: inline-block;
     }
     .slide-left, .slide-right{
@@ -356,5 +356,11 @@ i{
     }
     .slide-mid{
         margin: 2rem 0;
+    }
+    .abilities{
+        margin-bottom: 2rem;
+    }
+    .arrow img{
+       padding: 0;
     }
 }
