@@ -216,7 +216,6 @@ i{
 
 .img-omen{
     width: 28rem;
-    filter: drop-shadow(-10px 20px white);
     position: absolute;
     top: 2rem;
     right: 4rem;
@@ -529,6 +528,9 @@ i{
 
 /* SECTION 3 */
 
-.agents div{
-    opacity: 0;
+.agents{
+    background-color: #a93bf4;
+    height: 100rem;
+    position: relative;
 }
+
