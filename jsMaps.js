@@ -15,9 +15,9 @@ window.onload = function() {
       captionText.innerHTML = this.alt;
     }
     
-    var span = document.getElementsByClassName("X")[0];
+    var span = document.getElementsByClassName("X");
     
-    span.onclick = function() { 
+    span[0].onclick = function() { 
       modal.style.display = "none";
     }
 
@@ -33,8 +33,8 @@ window.onload = function() {
       modalImg2.src = this.src;
       captionText.innerHTML = this.alt;
     }
-    var span2 = document.getElementsByClassName("X")[0];
-    span2.onclick = function() { 
+
+    span[1].onclick = function() { 
       modal2.style.display = "none";
     }
 
@@ -50,8 +50,8 @@ window.onload = function() {
       modalImg3.src = this.src;
       captionText.innerHTML = this.alt;
     }
-    var span3 = document.getElementsByClassName("X")[0];
-    span3.onclick = function() { 
+
+    span[2].onclick = function() { 
       modal3.style.display = "none";
     }
 
@@ -67,8 +67,8 @@ window.onload = function() {
       modalImg4.src = this.src;
       captionText.innerHTML = this.alt;
     }
-    var span4 = document.getElementsByClassName("X")[0];
-    span4.onclick = function() { 
+
+    span[3].onclick = function() { 
       modal4.style.display = "none";
     }
 };
