@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaForant Maps</title>
     <link rel="stylesheet" href="mapsstyle.css">
-    <link rel="icon" href="assets/laforant-ico.ico">
+    <link rel="icon" href="assets/maps/laforant-ico.ico">
     <link rel="stylesheet" href="styleHome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jsMaps.js"></script>
@@ -86,45 +86,40 @@
 
         <div class="bodydesc">
             <div class="desctitle">
-                <h2>ASCENT</h2>
+                <h2 id="mapname"></h2>
             </div>
             
             
                 <div id="ZoomImage" class="zoomed">
                     <span class="X">&times</span>
                     <img class="isiZoom" id="popImg" src="assets/maps/valo1.jpg">
-                    <div id="teks">ASCENT</div>
+                    <h2 id="teks"></h2>
                 </div>
 
                 <div id="ZoomImage2" class="zoomed">
                     <span class="X">&times</span>
                     <img class="isiZoom" id="popImg2" src="assets/maps/ascentBP.jpg">
-                    <div id="teks2">Blueprint</div>
+                    <div id="teks2"></div>
                 </div>
 
                 <div id="ZoomImage3" class="zoomed">
                     <span class="X">&times</span>
                     <img class="isiZoom" id="popImg3" src="assets/maps/ascent1mid.jpg">
-                    <div id="teks3">Blueprint</div>
+                    <div id="teks3"></div>
                 </div>
 
                 <div id="ZoomImage4" class="zoomed">
                     <span class="X">&times</span>
                     <img class="isiZoom" id="popImg4" src="assets/maps/ascentb.jpg">
-                    <div id="teks4">Blueprint</div>
+                    <div id="teks4"></div>
                 </div>
 
             <div class="descbox">
                 <div class="descimg">
                     <img id="NormalImg" src="assets/maps/valo1.jpg" alt="Ascent">
-
-
-                    
-
                 </div>
                 <div class="desctxt">
-                    <p>
-                        An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they’re down, you’ll have to destroy them or find another way. Yield as little territory as possible.
+                    <p id="mapdef">
                     </p>
                 </div>
             </div>
@@ -132,7 +127,7 @@
 
         <div class="bodyblue">
             <div class="bluetitle">
-                <h2>ASCENT BLUEPRINT</h2>
+                <h2 id="mapBP"></h2>
             </div>
 
             <div class="imgblue">
@@ -143,15 +138,15 @@
 
         <div class="bodygal">
             <div class="galtitle">
-                <h2>ASCENT MAP GALLERY</h2>
+                <h2 id="mapMG"></h2>
                 <div class="imgflexgal">
                     <div class="imggalery">
                         <img src="assets/maps/ascent1mid.jpg" alt="Ascent Mid" id="NormalImg3">
-                        <p>MID ENTRANCE</p>
+                        <p id="MG1"></p>
                     </div>
                     <div class="imggalery">
                         <img src="assets/maps/ascentb.jpg" alt="Ascent B" id="NormalImg4">
-                        <p>B BOMBSITE</p>
+                        <p id="MG2"></p>
                     </div>
                 </div>
             </div>
@@ -162,7 +157,7 @@
     <div class="footer">
 
     </div>
-
+    <script src="jsMaps.js"></script>
 </body>
 
 </html>
