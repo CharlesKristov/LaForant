@@ -336,8 +336,8 @@ i{
 }
 
 @media screen and (max-width: 800px){
-    #body{
-        max-width: 800px;
+    header, #body{
+        width: 800px;
     }
     .slide-top{
         display: inline-block;
@@ -362,5 +362,11 @@ i{
     }
     .arrow img{
        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #body{
+        width: 1920px;
     }
 }
