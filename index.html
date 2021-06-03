@@ -7,7 +7,7 @@
     <title>Laforant</title>
     <link rel="icon" href="assets/laforant-ico.ico">
     <link rel="stylesheet" href="styleHome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <header>
@@ -15,49 +15,97 @@
             <a class="logo flex" href="index.html">
                 <img src="assets/home/logolaforant.png" alt="Logo Laforant">
             </a>
-            <a class="navbar-text flex" href="index.html">
-                Home
-            </a>
-            <div class="dropdown flex">
-                <a class="navbar-text" href="maps.html">
-                    Maps
-                    <i class="fa fa-caret-down"></i>
+            <div class="navbar-text-wrapper">
+                <a class="navbar-text flex" href="index.html">
+                    Home
                 </a>
-                <div class="dropdown-wrapper">
-                    <a class="dropdown-content" href="maps.html">BREEZE</a>
-                    <a class="dropdown-content" href="maps.html">ICEBOX</a>
-                    <a class="dropdown-content" href="maps.html">BIND</a>
-                    <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                <div class="dropdown flex">
+                    <a class="navbar-text" href="maps.html">
+                        Maps
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-wrapper">
+                        <a class="dropdown-content" href="maps.html">BREEZE</a>
+                        <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                        <a class="dropdown-content" href="maps.html">BIND</a>
+                        <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                    </div>
                 </div>
-            </div>
-            <div class=" dropdown flex">
-                <a class="navbar-text" href="agents.html">
-                    Agents
-                    <i class="fa fa-caret-down"></i>
+                <div class="dropdown flex">
+                    <a class="navbar-text" href="agents.html">
+                        Agents
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div id="agents-dropdown" class="dropdown-wrapper">
+                        <a class="dropdown-content" href="agents.html?agents=10">JETT</a>
+                        <a class="dropdown-content" href="agents.html?agents=6">REYNA</a>
+                        <a class="dropdown-content" href="agents.html?agents=1">PHOENIX</a>
+                        <a class="dropdown-content" href="agents.html">VIEW MORE AGENTS</a>
+                    </div>
+                </div>
+                <a class="navbar-text flex" href="index.html">
+                    System Requirements
                 </a>
-                <div id="agents-dropdown" class="dropdown-wrapper">
-                    <a class="dropdown-content" href="agents.html?agents=10">JETT</a>
-                    <a class="dropdown-content" href="agents.html?agents=6">REYNA</a>
-                    <a class="dropdown-content" href="agents.html?agents=1">PHOENIX</a>
-                    <a class="dropdown-content" href="agents.html">VIEW MORE AGENTS</a>
-                </div>
             </div>
-            <a class="navbar-text flex" href="index.html">
-                System Requirements
-            </a>
+        </div>
+        <div class="title-res-center">
+            <h2>LAFORANT</h2>
         </div>
         <div class="wrapper-button-navbar">
             <div class="border-button-navbar">
                 <a class="button-a" href="#">PRE REGISTER NOW</a>
             </div>
         </div>
+        <div class="wrapper-button-burger">
+            <button class="burger-button">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <div class="sidebar-responsive">
+            <div class="wrapper-sidebar">
+                <div class="wrapper-title-sidebar">
+                    <h2 class="title-sidebar">LAFORANT</h2>
+                    <button class="sidebar-close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="wrapper-content-sidebar">
+                    <div class="section-content-sidebar">
+                        <button class="sidebar-content a-caret">MAPS<i class="fa fa-caret-right caret-sidebar"></i>
+                        </button>
+                        <div class="sidebar-dropdown">
+                            <a class="dropdown-content" href="maps.html">BREEZE</a>
+                            <a class="dropdown-content" href="maps.html">ICEBOX</a>
+                            <a class="dropdown-content" href="maps.html">BIND</a>
+                            <a class="dropdown-content" href="maps.html">VIEW MORE MAPS</a>
+                        </div>
+                    </div>
+                    <div class="section-content-sidebar">
+                        <button class="sidebar-content a-caret">AGENTS<i class="fa fa-caret-right caret-sidebar"></i></button>
+                        <div class="sidebar-dropdown">
+                            <a class="dropdown-content" href="agents.html?agents=10">JETT</a>
+                            <a class="dropdown-content" href="agents.html?agents=6">REYNA</a>
+                            <a class="dropdown-content" href="agents.html?agents=1">PHOENIX</a>
+                            <a class="dropdown-content" href="agents.html">VIEW MORE AGENTS</a>
+                        </div>
+                    </div>
+                    <div class="section-content-sidebar">
+                        <a class="sidebar-content" href="">SYSTEM REQUIREMENTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <!-- BODY -->
+
     <div class="body">
         <section class="pre-reg">
             <div class="title">
-                La<br>Forant
+                <h1 class="title-desktop">La<br>Forant</h1>
+                <h1 class="title-nondesk">Laforant</h1>
                 <div class="sub-title">
-                    A 5v5 character-based tactical shooter
+                    <h2>A 5v5 character-based tactical shooter</h2>
                 </div>
                 <div class="title-button">
                     <div class="title-border-button">
@@ -67,9 +115,12 @@
                     </div>
                 </div>
             </div>
-            <img class="img-omen" src="assets/home/Omen_artwork.png" alt="Omen Image">
+            <div class="wrapper-omen">
+                <img class="img-omen" src="assets/home/Omen_artwork.png" alt="Omen Image">
+            </div>
             <div class="triangle"></div>
         </section>
+        
         <section class="news">
             <div class="title">
                 <h1>LATEST NEWS</h1>
@@ -105,27 +156,104 @@
                 </div>
             </div>
         </section>
+
         <section class="agents">
-            <div class="agents-image-wrapper">
-                <img src="assets/home/jett.png" alt="Jett image" class="image-jett">
-                <img src="assets/home/raze.png" alt="Raze image" class="image-raze">
+            <div class="agents-desktop">
+                <div class="agents-image-wrapper">
+                    <img src="assets/home/jett.png" alt="Jett image" class="image-jett">
+                    <img src="assets/home/raze.png" alt="Raze image" class="image-raze">
+                </div>
+                <div class="agents-title-wrapper">
+                    <h1 class="agents-title">
+                        YOUR<br>AGENTS
+                    </h1>
+                    <h3 class="agents-sub-title">CREATIVITY IS YOUR GREATEST WEAPON.</h3>
+                    <h4 class="agents-detail">
+                        More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same
+                    </h4>
+                    <div class="agents-button">
+                        <div class="agents-border-button">
+                            <a href="agents.html" class="agents-button-a">
+                                VIEW ALL AGENTS
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="agents-title-wrapper">
-                <h1 class="agents-title">
-                    YOUR<br>AGENTS
+            <div class="agents-responsive">
+                <div class="agents-title-wrapper">
+                    <h1 class="agents-title">
+                        YOUR AGENTS
+                    </h1>
+                    <h3 class="agents-sub-title">CREATIVITY IS YOUR GREATEST WEAPON.</h3>
+                    <h4 class="agents-detail">
+                        More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same
+                    </h4>
+                </div>
+                <div class="agents-image-wrapper">
+                    <img src="assets/home/jett.png" alt="Jett image" class="image-jett-res">
+                    <img src="assets/home/raze.png" alt="Raze image" class="image-raze-res">
+                    <div class="agents-button">
+                        <div class="agents-border-button">
+                            <a href="agents.html" class="agents-button-a">
+                                VIEW ALL AGENTS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="maps">
+            <div class="maps-wrapper-title">
+                <h1 class="maps-title">
+                    YOUR MAPS
                 </h1>
-                <h3 class="agents-sub-title">CREATIVITY IS YOUR GREATEST WEAPON.</h3>
-                <h4 class="agents-detail">
-                    More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same
+                <h3 class="maps-sub-title">
+                    Fight around the world
+                </h3>
+                <h4 class="maps-detail">
+                    Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
                 </h4>
-                <div class="agents-button">
-                    <div class="agents-border-button">
-                        <a href="agents.html" class="agents-button-a">
+                <div class="maps-button">
+                    <div class="maps-border-button">
+                        <a href="maps.html" class="maps-button-a">
                             VIEW ALL AGENTS
                         </a>
                     </div>
                 </div>
             </div>
+        </section>
+    </div>
+    <div class="footer">
+        <section class="sect1">
+            <img src="assets/home/Logo2psd.png" alt="Logo Falorant">
+            <div class="img-contact-wrapper">
+                <a href="https://twitter.com/playvalorant" class="contact">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/PlayValorant" class="contact">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/playvalorantofficial/" class="contact">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/PlayVALORANT/" class="contact">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://discord.com/invite/valorant" class="contact">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+        </section>
+        <section class="sect2">
+            <div class="terms">
+                <a class="start" href="https://www.riotgames.com/en/privacy-notice">Privacy Policy</a>
+                <a class="mid" href="https://www.riotgames.com/en/terms-of-service">Terms of Services</a>
+                <a class="end" href="#">Cookies Prefences</a>
+            </div>
+            <p>Copyright © 2020 Laforant, Inc.  LAFORANT. All Rights Reserved. Any Trademarks, Service marks and registered trademarks of Laforant, Inc.</p>
+            <img class="game-rated" src="assets/home/esrb.png" alt="Rating game">
         </section>
     </div>
     <script src="script.js"></script>
