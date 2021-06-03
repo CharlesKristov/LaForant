@@ -1,6 +1,6 @@
-const slideImage = Array.from(document.querySelectorAll('.slide-image')), detailImage = document.querySelector('.detail-image').children, boardDetail = document.querySelector('.board-text-more');
+const slideImage = Array.from(document.querySelectorAll('.slide-image')), detailImage = document.querySelector('.detail-image').children, boardDetail = document.querySelector('.board-text-more'), aCaret = Array.from(document.querySelectorAll('.a-caret')), caretSidebar = Array.from(document.querySelectorAll('.caret-sidebar')), sidebarDrop = Array.from(document.querySelectorAll('.sidebar-dropdown')), sidebar = document.querySelector('.sidebar-responsive'), burgerRes = document.querySelector('.burger-button'), closeButton = document.querySelector('.sidebar-close');
 
-let count = document.querySelector('.count'), temp = 0, right = document.querySelector('#right'), left = document.querySelector('#left'), 
+let count = document.querySelector('.count'), temp = 0, right = document.querySelector('#right'), left = document.querySelector('#left'), a = null, 
 
 arr = [
     {
@@ -90,4 +90,49 @@ function sliderDetail(){
         boardDetail.innerHTML += `<a href="`+e.url+`" target="_blank">`+ e.title +`<span class=text-detail-date>`+ e.date +`</span></a>`
     });
 }
+
+burgerRes.addEventListener('click', () =>{
+    sidebar.style.display = 'flex';
+    setTimeout(() => {
+        sidebar.children[0].classList.add('show-side');
+    }, 200);
+})
+
+closeButton.addEventListener('click', () => {
+    sidebar.children[0].classList.remove('show-side');
+    setTimeout(() => {
+        sidebar.style.display = 'none';
+    }, 300);
+})
+
+window.addEventListener('click', (e) => {
+    if(e.target == sidebar){
+        sidebar.children[0].classList.remove('show-side');
+        setTimeout(() => {
+            sidebar.style.display = 'none';
+        }, 300);
+    }
+})
+
+
+aCaret.forEach((e) => {
+    e.addEventListener('click', () => {
+        let dropdown = e.closest('.section-content-sidebar').children[1];
+        caretSidebar.forEach((element) => {
+            element.style.transform = 'rotate(0deg)';
+        })
+        sidebarDrop.forEach((element) => {
+            element.classList.remove('show');
+        })
+        if(a == e){
+            e.children[0].style.transform = 'rotate(0deg)';
+            dropdown.classList.remove('show');
+            a = null;
+        }else{
+            e.children[0].style.transform = 'rotate(90deg)';
+            dropdown.classList.add('show');
+            a = e;
+        }
+    })
+})
 
