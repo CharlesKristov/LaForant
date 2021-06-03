@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Register | LaForant</title>
+    <link rel="stylesheet" href="styleRegister.css">
+    <link rel="icon" href="assets/laforant-ico.ico">
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="body">
+        <form action="index.html" method="post" onsubmit="return validateForm()">
+            <div class="register-header">
+                Pre Register
+            </div>
+            <div class="register-desc">
+                Thank you for Pre-Registering LaForant!
+                <br>
+                Create your account now by filling your details below to get information and updates about the release
+            </div>
+            <div class="input">
+                Username:
+                <input type="text" name="username" id="username" autofocus>
+                <span class="validation" id="username-error">Field Required!</span>
+            </div>
+            <div class="input">
+                Email:
+                <input type="text" name="email" id="email">
+                <span class="validation" id="email-error">Field Required!</span>
+            </div>
+            <div class="input">
+                Password:
+                <input type="password" name="password" id="password">
+                <i id="toggle-eye">
+                    <img src="assets/eye.png" alt="">
+                </i>
+                <span class="validation" id="password-error">Field Required!</span>
+            </div>
+            <div class="input">
+                Confirm Password:
+                <input type="password" name="confirm-password" id="confirm-password">
+                <span class="validation" id="confirm-password-error">Field Required!</span>
+            </div>
+            <div class="input">
+                Date of Birth:
+                <input type="date" name="dob" id="dob">
+                <span class="validation" id="dob-error">Field Required!</span>
+            </div>
+            <div class="input">
+                Nationality:
+                <select name="nationality" id="nationality">
+                    <option value="0"></option>
+                    <option value="1">Indonesia</option> 
+                    <option value="2">Malaysia</option>
+                    <option value="3">Singapore</option>
+                </select>
+                <span class="validation" id="nationality-error">Field Required!</span>
+            </div>
+            <div class="input">
+                <input type="checkbox" name="terms" id="terms">
+                Agree to terms and conditions
+                <span class="validation" id="terms-error">Field Required!</span>
+            </div>
+            <div class="input">
+                <input type="submit" value="Pre-Register">
+            </div>
+        </form>
+    </div>
+    <script src="jsRegister.js"></script>
+</body>
+</html>
+
+<!-- TODO: add countries, customize accept button, add css -->
