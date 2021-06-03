@@ -67,8 +67,22 @@
 }
 
 .list p{
-    padding:5px;
+    background-color: rgb(77, 10, 104);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
+
+.list p:hover{
+    opacity: 0.8;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .bodydesc{
     display:flex;
@@ -160,6 +174,39 @@
 }
 
 #teks {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+#teks2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+#teks3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+#teks4 {
     margin: auto;
     display: block;
     width: 80%;
