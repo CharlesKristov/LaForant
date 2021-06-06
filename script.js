@@ -1,4 +1,5 @@
-const slideImage = Array.from(document.querySelectorAll('.slide-image')), detailImage = document.querySelector('.detail-image').children, boardDetail = document.querySelector('.board-text-more'), aCaret = Array.from(document.querySelectorAll('.a-caret')), caretSidebar = Array.from(document.querySelectorAll('.caret-sidebar')), sidebarDrop = Array.from(document.querySelectorAll('.sidebar-dropdown')), sidebar = document.querySelector('.sidebar-responsive'), burgerRes = document.querySelector('.burger-button'), closeButton = document.querySelector('.sidebar-close');
+$(function(){
+    const slideImage = Array.from(document.querySelectorAll('.slide-image')), detailImage = document.querySelector('.detail-image').children, boardDetail = document.querySelector('.board-text-more'), aCaret = Array.from(document.querySelectorAll('.a-caret')), caretSidebar = Array.from(document.querySelectorAll('.caret-sidebar')), sidebarDrop = Array.from(document.querySelectorAll('.sidebar-dropdown')), sidebar = document.querySelector('.sidebar-responsive'), burgerRes = document.querySelector('.burger-button'), closeButton = document.querySelector('.sidebar-close');
 
 let count = document.querySelector('.count'), temp = 0, right = document.querySelector('#right'), left = document.querySelector('#left'), a = null, 
 
@@ -50,46 +51,50 @@ detailNews = [
 ];
 
 sliderDetail();
-changeImage(temp);
-
-function changeImage(now){
-    slideImage.forEach(e => {
-        e.style.display = 'none';
-    });
-    detailImage[0].innerHTML = arr[now].title;
-    detailImage[1].innerHTML = arr[now].date;
-    slideImage[now].href = arr[now].url;
-
-    slideImage[now].style.display = 'block';
-}
-
-right.addEventListener('click', () =>{
-    if(temp + 1 > 2){
-        changeImage(0);
-        temp = 0;
-    }else{
-        ++temp;
-        changeImage(temp);
-    }
-    count.innerHTML = temp + 1;
-});
-
-left.addEventListener('click', () =>{
-    if(temp - 1 < 0){
-        changeImage(2);
-        temp = 2;
-    }else{
-        --temp;
-        changeImage(temp);
-    }
-    count.innerHTML = temp + 1;
-})
 
 function sliderDetail(){
     detailNews.forEach( e => {
-        boardDetail.innerHTML += `<a href="`+e.url+`" target="_blank">`+ e.title +`<span class=text-detail-date>`+ e.date +`</span></a>`
+        $('.board-text-more').append($(`<a href="${e.url}" target="_blank">${e.title}</a><span class=text-detail-date>${e.date}</span></a>`))
     });
 }
+
+    const slidesImage = $('.slide-image'), counts = $('.count');
+
+    slidesImage.hide();
+    let curr = 0;
+
+    slidesImage.eq(curr).show();
+    counts.html(curr + 1);
+    $('.detail-image-text').html(arr[curr].title);
+    $('.detail-image-date').html(arr[curr].date);
+
+    $('#left').click(()=>{
+        slidesImage.eq(curr).hide()
+        if(curr == 0){
+            curr = 2;
+        }else{
+            --curr;
+        }
+        $('.detail-image-text').html(arr[curr].title);
+        $('.detail-image-date').html(arr[curr].date);
+        counts.html(curr + 1);
+        slidesImage.eq(curr).fadeIn();
+    })
+
+    $('#right').click(()=>{
+        slidesImage.eq(curr).hide()
+        if(curr == 2){
+            curr = 0
+        }else{
+            ++curr
+        }
+        $('.detail-image-text').html(arr[curr].title)
+        $('.detail-image-date').html(arr[curr].date)
+        counts.html(curr + 1)
+        slidesImage.eq(curr).fadeIn()
+    })
+
+
 
 burgerRes.addEventListener('click', () =>{
     sidebar.style.display = 'flex';
@@ -136,3 +141,5 @@ aCaret.forEach((e) => {
     })
 })
 
+
+})
