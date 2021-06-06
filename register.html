@@ -7,72 +7,86 @@
     <title>Pre Register | LaForant</title>
     <link rel="stylesheet" href="styleRegister.css">
     <link rel="icon" href="assets/laforant-ico.ico">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-
-    </header>
     <div id="body">
-        <form action="index.html" method="post" onsubmit="return validateForm()">
+        <i class="bg-image"><img src="assets/register/icebox.jpg" alt=""></i>
+        <i class="home-button"><a href="index.html"><img src="assets/register/home button.png" alt=""></a></i>
+        <div class="register-title">
             <div class="register-header">
-                Pre Register
+                PRE REGISTER
             </div>
             <div class="register-desc">
-                Thank you for Pre-Registering LaForant!
-                <br>
-                Create your account now by filling your details below to get information and updates about the release
+                <p class="add-line-spacing">Thank you for Pre-Registering LaForant!</p>
+                <p>Create your account now by filling your details below to get information and updates about the release</p>
             </div>
-            <div class="input">
-                Username:
-                <input type="text" name="username" id="username" autofocus>
-                <span class="validation" id="username-error">Field Required!</span>
-            </div>
-            <div class="input">
-                Email:
-                <input type="text" name="email" id="email">
-                <span class="validation" id="email-error">Field Required!</span>
-            </div>
-            <div class="input">
-                Password:
-                <input type="password" name="password" id="password">
-                <i id="toggle-eye">
-                    <img src="assets/eye.png" alt="">
-                </i>
-                <span class="validation" id="password-error">Field Required!</span>
-            </div>
-            <div class="input">
-                Confirm Password:
-                <input type="password" name="confirm-password" id="confirm-password">
-                <span class="validation" id="confirm-password-error">Field Required!</span>
-            </div>
-            <div class="input">
-                Date of Birth:
-                <input type="date" name="dob" id="dob">
-                <span class="validation" id="dob-error">Field Required!</span>
-            </div>
-            <div class="input">
-                Nationality:
-                <select name="nationality" id="nationality">
-                    <option value="0"></option>
-                    <option value="1">Indonesia</option> 
-                    <option value="2">Malaysia</option>
-                    <option value="3">Singapore</option>
-                </select>
-                <span class="validation" id="nationality-error">Field Required!</span>
-            </div>
-            <div class="input">
-                <input type="checkbox" name="terms" id="terms">
-                Agree to terms and conditions
-                <span class="validation" id="terms-error">Field Required!</span>
-            </div>
-            <div class="input">
-                <input type="submit" value="Pre-Register">
-            </div>
-        </form>
+        </div>
+        <div class="form">
+            <form action="index.html" method="post" onsubmit="return validateForm()">
+                <div class="input">
+                    Username
+                    <i class="fas fa-check-circle hidden" id="username-checkmark"></i>
+                    <input type="text" name="username" id="username" autofocus>
+                    <span class="validation" id="username-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    Email
+                    <i class="fas fa-check-circle hidden" id="email-checkmark"></i>
+                    <input type="text" name="email" id="email">
+                    <span class="validation" id="email-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    Password
+                    <i class="fas fa-check-circle hidden" id="password-checkmark"></i>
+                    <i class="fas fa-eye" id="toggle-eye"></i>
+                    <input type="password" name="password" id="password">
+                    <span class="validation" id="password-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    Confirm Password
+                    <i class="fas fa-check-circle hidden" id="confirm-password-checkmark"></i>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    <span class="validation" id="confirm-password-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    Date of Birth
+                    <i class="fas fa-check-circle hidden" id="dob-checkmark"></i>
+                    <input type="date" name="dob" id="dob">
+                    <span class="validation" id="dob-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    Nationality
+                    <i class="fas fa-check-circle hidden" id="nationality-checkmark"></i>
+                    <select name="nationality" id="nationality">
+                        <option value="0"></option>
+                        <option value="1">Brunei</option> 
+                        <option value="2">Cambodia</option>
+                        <option value="3">Timor-Leste</option>
+                        <option value="3">Indonesia</option>
+                        <option value="3">Laos</option>
+                        <option value="3">Malaysia</option>
+                        <option value="3">Myanmar</option>
+                        <option value="3">Philippines</option>
+                        <option value="3">Singapore</option>
+                        <option value="3">Thailand</option>
+                        <option value="3">Vietnam</option>
+                    </select>
+                    <span class="validation" id="nationality-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    <div class="row">
+                        <input type="checkbox" name="terms" id="terms">
+                        Agree to&nbsp<a href="https://www.riotgames.com/en/terms-of-service" target="_blank">Terms of Service</a>
+                    </div>
+                    <span class="validation" id="terms-error">Field Required!</span>
+                </div>
+                <div class="input">
+                    <input type="submit" value="Pre-Register" id="pre-register-button">
+                </div>
+            </form>
+        </div>
     </div>
     <script src="jsRegister.js"></script>
 </body>
 </html>
-
-<!-- TODO: add countries, customize accept button, add css -->
