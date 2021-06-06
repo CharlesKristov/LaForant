@@ -94,18 +94,22 @@ document.getElementById("username").addEventListener("keyup", validateUsername)
 function validateUsername(){
     let username = document.getElementById('username').value
     let usernameError = document.getElementById('username-error')
-    usernameError.hidden = false
+    usernameError.classList.remove('hidden')
+
+    let usernameCk = document.getElementById('username-checkmark')
+    usernameCk.classList.add('hidden')
     if(!checkMinLength(username, 0)){
         usernameError.innerHTML = "Field Required!"
     }
-    else if(!(checkMinLength(username, 3) && (checkMaxLength(username, 20)))){
+    else if(!(checkMinLength(username, 3) && (checkMaxLength(username, 21)))){
         usernameError.innerHTML = "Username must contain between 4 and 20 characters!"
     }
     else if(!checkSpecialCharacter(username)){
         usernameError.innerHTML = "Username may not contain any special characters!"
     }
     else{
-        usernameError.hidden = true
+        usernameError.classList.add('hidden')
+        usernameCk.classList.remove('hidden')
         return true
     }
     return false
@@ -115,7 +119,10 @@ document.getElementById("email").addEventListener("keyup", validateEmail)
 function validateEmail(){
     let email = document.getElementById('email').value
     let emailError = document.getElementById('email-error')
-    emailError.hidden = false
+    emailError.classList.remove('hidden')
+
+    let emailCk = document.getElementById('email-checkmark')
+    emailCk.classList.add('hidden')
     if(!checkMinLength(email, 0)){
         emailError.innerHTML = "Field Required!"
     }
@@ -126,17 +133,22 @@ function validateEmail(){
         emailError.innerHTML = "Email Domain Unrecognized!"
     }
     else{
-        emailError.hidden = true
+        emailError.classList.add('hidden')
+        emailCk.classList.remove('hidden')
         return true
     }
     return false
 }
 
 document.getElementById("password").addEventListener("keyup", validatePassword)
+document.getElementById("password").addEventListener("keyup", validateConfirmPassword)
 function validatePassword(){
     let password = document.getElementById('password').value
     let passwordError = document.getElementById('password-error')
-    passwordError.hidden = false
+    passwordError.classList.remove('hidden')
+
+    let passwordCk = document.getElementById('password-checkmark')
+    passwordCk.classList.add('hidden')
     if(!checkMinLength(password, 0)){
         passwordError.innerHTML = "Field Required!"
     }
@@ -153,7 +165,8 @@ function validatePassword(){
         passwordError.innerHTML = "Password must contain at least 1 special character!"
     }
     else{
-        passwordError.hidden = true
+        passwordError.classList.add('hidden')
+        passwordCk.classList.remove('hidden')
         return true
     }
     return false
@@ -164,7 +177,10 @@ function validateConfirmPassword(){
     let password = document.getElementById('password').value
     let confirmPassword = document.getElementById('confirm-password').value
     let confirmPasswordError = document.getElementById('confirm-password-error')
-    confirmPasswordError.hidden = false
+    confirmPasswordError.classList.remove('hidden')
+
+    let confirmPasswordCk = document.getElementById('confirm-password-checkmark')
+    confirmPasswordCk.classList.add('hidden')
     if(!checkMinLength(confirmPassword, 0)){
         confirmPasswordError.innerHTML = "Field Required!"
     }
@@ -172,7 +188,8 @@ function validateConfirmPassword(){
         confirmPasswordError.innerHTML = "Password and Confirm Password don't Match!"
     }
     else{
-        confirmPasswordError.hidden = true
+        confirmPasswordError.classList.add('hidden')
+        confirmPasswordCk.classList.remove('hidden')
         return true
     }
     return false
@@ -186,16 +203,22 @@ function validateDOB(){
     let dd = Number(inputDOB.substr(8, 2))
 
     let dobError = document.getElementById('dob-error')
-    dobError.hidden = false
+    dobError.classList.remove('hidden')
 
+    let dobCk = document.getElementById('dob-checkmark')
+    dobCk.classList.add('hidden')
     if(!compareDOB(yyyy + 18, mm - 1, dd)){
         dobError.innerHTML = "You must be at least 18 years old!"
     }
-    else if(!inputDOB){
+    else if(yyyy < 1820 && yyyy>999){
+        dobError.innerHTML = "Umm are you sure you're more than 200 years old?"
+    }
+    else if(!inputDOB || yyyy<999){
         dobError.innerHTML = "Field Required!"
     }
     else{
-        dobError.hidden = true
+        dobError.classList.add('hidden')
+        dobCk.classList.remove('hidden')
         return true
     }
     return false
@@ -205,14 +228,16 @@ document.getElementById("nationality").addEventListener("change", validateNation
 function validateNationality(){
     let nationality = document.getElementById('nationality')
     let nationalityError = document.getElementById('nationality-error')
-    nationalityError.hidden = false
-    // console.log(nationality.options[nationality.selectedIndex].text) //print the option
-    // console.log(nationality.value) //print the value
+    nationalityError.classList.remove('hidden')
+
+    let nationalityCk = document.getElementById('nationality-checkmark')
+    nationalityCk.classList.add('hidden')
     if(nationality.value == 0){
         nationalityError.innerHTML = "Field Required!"
     }
     else{
-        nationalityError.hidden = true
+        nationalityError.classList.add('hidden')
+        nationalityCk.classList.remove('hidden')
         return true
     }
     return false
@@ -222,9 +247,9 @@ document.getElementById("terms").addEventListener("click", validateTerms)
 function validateTerms(){
     let terms = document.getElementById('terms')
     let termsError = document.getElementById('terms-error')
-    termsError.hidden = false
+    termsError.classList.remove('hidden')
     if(terms.checked){
-        termsError.hidden = true
+        termsError.classList.add('hidden')
         return true
     }
     return false
@@ -244,5 +269,5 @@ document.getElementById("toggle-eye").addEventListener("click", function(){
     let password = document.getElementById('password')
     let type = password.getAttribute("type")
     password.setAttribute("type", (type === "password")? "text" : "password")
+    this.classList.toggle("fa-eye-slash")
 })
-
