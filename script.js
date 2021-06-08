@@ -54,7 +54,7 @@ sliderDetail();
 
 function sliderDetail(){
     detailNews.forEach( e => {
-        $('.board-text-more').append($(`<a href="${e.url}" target="_blank">${e.title}</a><span class=text-detail-date>${e.date}</span></a>`))
+        $('.board-text-more').append($(`<a href="${e.url}" target="_blank">${e.title}<span>${e.date}</span></a>`)) 
     });
 }
 

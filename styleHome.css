@@ -1145,9 +1145,13 @@ i{
 
 
 @media screen and (max-width: 900px){
+    /* GLOBAL */
+    
     .agents, .maps{
         padding: 2rem 2rem 2.5rem;
     }
+
+    /* SECTION HEADER */
 
     .wrapper-button-navbar{
         display: none;
@@ -1169,6 +1173,8 @@ i{
         display: flex;
     }
 
+    /* SECTION PRE REG */
+    
     .wrapper-omen{
         top: 52%;
     }
