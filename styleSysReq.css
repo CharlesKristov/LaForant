@@ -80,8 +80,8 @@ a > img{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 50rem;
     clip-path: polygon(100% 75%, 0 100%, 100% 100%);
 }
 
@@ -91,15 +91,16 @@ a > img{
 
 .lowerbody .title{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 4rem 0rem;
+    gap: 2rem;
 }
 
 .img-desktop{
     background-color: transparent;
     border: none;
-    padding: 0rem 2rem 0rem 0rem;
 }
 
 .img-desktop i{
@@ -113,6 +114,7 @@ a > img{
 }
 
 .lowerbody .title .text{
+    text-align: center;
     font-size: 40pt;
     font-family: 'righteous';
     color: white;
@@ -120,6 +122,7 @@ a > img{
 
 .phoenix{
     position: absolute;
+    width: 37rem;
     left: 4rem;
     top: 2rem;
 }
@@ -132,10 +135,12 @@ a > img{
 
 .wrapper-glass-card{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    flex-wrap: wrap;
+    gap: 4rem;
 }
 
 .glass{
@@ -249,3 +254,149 @@ a > img{
 .status-pc{
     font-family: 'righteous';
 }
+
+@media screen and (max-width: 1200px){
+    .upperbody{
+        height: 36rem;
+    }
+    .phoenix{
+        width: 33rem;
+    }
+
+    .upperbody .title{
+        font-size: 100pt;
+    }
+
+    .upperbody::before{
+        font-size: 160pt;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .upperbody::after{
+        width: 20rem;
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 1045px){
+    .upperbody{
+        height: 33rem;
+    }
+
+    .phoenix{
+        width: 30rem;
+    }
+
+    .upperbody .title{
+        font-size: 85pt;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .upperbody{
+        height: 30rem;
+    }
+
+    .phoenix{
+        width: 27rem;
+    }
+
+    .upperbody .title{
+        font-size: 80pt;
+    }
+
+    .lowerbody{
+        padding: 0rem 2rem 8rem;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .upperbody::before{
+        font-size: 110pt;
+        transform: translate(-50%, 5rem);
+    }
+
+    .upperbody{
+        height: 40rem;
+        padding: 1rem 2rem;
+    }
+
+    .upperbody::after{
+        width: 12rem;
+        height: 40rem;
+    }
+
+    .phoenix{
+        width: 33rem;
+        top: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .upperbody .title{
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+        font-size: 50pt;
+    }
+
+    .lowerbody{
+        padding: 0rem 2rem 4rem;
+    }
+
+    .lowerbody .title{
+        justify-content: space-evenly;
+        padding: 2rem 0rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .upperbody::after{
+        width: 8rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .upperbody .title{
+        font-size: 25pt;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .lowerbody .title .text{
+        font-size: 35pt;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .upperbody::before{
+        font-size: 50pt;
+        transform: translate(-50%, 4rem);
+    }
+    
+    .upperbody{
+        height: 28rem;
+    }
+
+    .upperbody::after{
+        width: 6rem;
+        height: 20rem;
+    }
+
+    .phoenix{
+        top: 4rem;
+    }
+    
+    .upperbody .title{
+        left: 2rem;
+    }
+    
+    .lowerbody .title .text{
+        font-size: 30pt;
+    }
+}
+
