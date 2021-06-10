@@ -408,35 +408,20 @@ i{
 
 .wrapper-glass-card{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.glass::before{
-    content: "";
-    position: absolute;
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    margin: -20px;
-}
-
 .glass{
     position: relative;
-    width: 20rem;
-    height: 40rem;
+    width: 25rem;
     z-index: 1;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    background: transparent;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
 }
-
 
 .wrapper-card::before{
     content: '';
@@ -491,12 +476,24 @@ i{
 }
 
 .real-wrapper-card{
-    padding: 1rem 2rem;
+    padding: 3rem 0rem;
     height: 100%;
 }
 
 .real-wrapper-card div{
     text-align: center;
+}
+
+.status-pc *{
+    padding-bottom: 0.5rem;
+}
+
+.status-pc :not(:nth-child(2)){
+    font-weight: bold;
+}
+
+.real-wrapper-card .status-pc :not(:nth-child(2)){
+    color: white;
 }
 
 .real-wrapper-card div:first-child{
@@ -512,6 +509,10 @@ i{
 }
 
 .real-wrapper-card div h3:first-child{
+    font-weight: bold;
+}
+
+.real-wrapper-card div h3{
     color: white;
     font-family: 'righteous';
     padding-bottom: 0.5rem;
@@ -526,7 +527,6 @@ i{
 }
 
 /* FOOTER */
-
 
 .footer{
     display: flex;

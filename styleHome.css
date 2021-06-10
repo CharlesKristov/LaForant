@@ -491,7 +491,7 @@ i{
 }
 
 .news .title{
-    padding: 2rem;
+    padding: 2rem 0rem;
     font-family: 'righteous';
     color: #9575ff;
     font-size: 50pt;
@@ -563,7 +563,7 @@ i{
     background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     left: 0;
-    border-radius: 0.2rem;
+    clip-path: polygon(0 0, 92% 0, 100% 26%, 100% 100%, 0 100%);
     opacity: 0;
     transition: 0.5s;
     z-index: 2;
@@ -811,7 +811,7 @@ i{
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 2rem 4rem;
 }
 
@@ -841,11 +841,13 @@ i{
 .maps-sub-title{
     padding: 2rem 0rem 1.5rem 0rem;
     font-family: 'quantico';
+    font-size: 24px;
 }
 
 .maps-detail{
     padding-right: 1rem;
     font-family: 'quantico';
+    font-size: 18px;
 }
 
 .maps-button{
@@ -928,13 +930,14 @@ i{
     align-items: center;
     padding: 2rem 4rem;
     background-color: white;
+    gap: 1rem;
 }
 
 .sect1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    flex-wrap: wrap;
 }
 
 .sect1 img{
@@ -943,8 +946,6 @@ i{
 
 .img-contact-wrapper{
     display: flex;
-    border-left: 2px solid #dddddd;
-    padding: 1.5rem 0rem;
 }
 
 .contact{
@@ -953,11 +954,10 @@ i{
 }
 
 .sect2{
+    display: flex;
+    flex-direction: column;
     width: 40rem;
-}
-
-.sect2 p{
-    margin: 1rem 0rem;
+    gap: 1rem;
 }
 
 .terms .start{
@@ -982,7 +982,6 @@ i{
 }
 
 /* RESPONSIVE */
-
 
 @media screen and (min-width: 1536px) {
     body{
@@ -1087,7 +1086,7 @@ i{
 
     .agents-detail{
         padding: 0rem;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .image-raze-res, .image-jett-res{
@@ -1115,12 +1114,7 @@ i{
     }
 
     .agents-button-a{
-        font-size: 20pt;
         padding: 0.5rem 3rem;
-    }
-
-    .agents-button-a{
-        font-size: 16pt;
     }
 
     /* FOOTER */
@@ -1134,10 +1128,6 @@ i{
         text-align: center;
     }
 
-    .sect2 p{
-        margin: 2rem 0rem;
-    }
-
     .game-rated{
         margin: auto;
     }
@@ -1147,7 +1137,7 @@ i{
 @media screen and (max-width: 900px){
     /* GLOBAL */
     
-    .agents, .maps{
+    .agents, .maps, .pre-reg, .footer{
         padding: 2rem 2rem 2.5rem;
     }
 
@@ -1185,13 +1175,8 @@ i{
         width: 20rem;
     }
 
-    .agents-detail{
-        font-size: 16px;
-    }
-
     .agents-button-a{
         font-size: 14pt;
-        padding: 0.5rem 3rem;
     }
 
     .agents-title-wrapper{
@@ -1221,13 +1206,17 @@ i{
         padding-top: 3rem;
     }
 
+    .maps-sub-title{
+        font-size: 20px;
+    }
+
     .maps-detail{
         padding: 0;
+        font-size: 16px;
     }
 
     .maps-button{
         position: absolute;
-        bottom: 2rem;
         margin: 0;
         bottom: 4rem;
         left: 50%;
@@ -1245,5 +1234,133 @@ i{
 
     .maps-sub-title{
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 376px){
+
+    /* PRE REG */
+
+    .pre-reg, .news, .agents, .maps, .footer{
+        padding: 2rem 1rem;
+    }
+    .title-nondesk{
+        font-size: 50pt;
+    }
+    .sub-title h2{
+        font-size: 16pt;
+        margin: 0;
+    }
+
+    .pre-reg .wrapper-omen .img-omen{
+        width: 20rem;
+    }
+
+    .triangle{
+        border: 3rem solid white;
+        border-right: 3rem solid transparent;
+        border-top: 3rem solid transparent;
+    }
+
+    .title-button{
+        margin: 4rem 0rem 0rem;
+    }
+    .title-border-button{
+        width: 16rem;
+    }
+
+    .title-button-a{
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+    }
+
+    /* NEWS */
+
+    .news .title h1{
+        font-size: 50pt;
+    }
+    .board-wrapper{
+        padding: 2rem 0rem;
+    }
+    .board{
+        height: 16rem;
+    }
+    .image .button-image button{
+        margin-right: 0.5rem;
+    }
+
+    .image .button-image button i{
+        font-size: 25pt;
+    }
+
+    .detail-image{
+        opacity: 1;
+        padding: 1rem;
+    }
+
+    .detail-image h2{
+        font-size: 16px;
+    }
+
+    .detail-image h4{
+        font-size: 14px;
+    }
+
+    .board-text-more a{
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    .board-text-more a span{
+        font-size: 14px;
+    }
+
+    /* AGENTS */
+
+    .agents-image-wrapper img{
+        width: 16rem;
+        filter: none;
+    }
+
+    .image-jett-res{
+        right: -4.5rem;
+        
+    }
+
+    .image-raze-res{
+        left: -4.5rem;
+    }
+
+    .agents-title-wrapper{
+        width: 20rem;
+    }
+
+    .agents-title{
+        font-size: 50pt;
+    }
+
+    /* MAPS */
+
+    .maps-title{
+        font-size: 50pt;
+    }
+
+    .maps-button{
+        bottom: 1rem;
+        width: 16rem;
+    }
+
+    .maps-button-a{
+        padding: 0.5rem 2rem;
+    }
+
+    /* FOOTER */
+
+    .sect1, .sect2{
+        width: 20rem;
+    }
+
+    .sect2{
+        font-size: 14px;
     }
 }
