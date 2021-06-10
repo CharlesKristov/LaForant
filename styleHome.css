@@ -1061,6 +1061,15 @@ i{
         margin: 1rem 4rem 4rem;
     }
 
+    /* SECTION NEWS */
+
+    .news::after{
+        top: 16rem;
+        left: -8rem;
+        font-size: 225pt;
+        transform: rotate(35deg);
+    }
+
     /* SECTION AGENTS */
 
     .agents-desktop{
@@ -1167,6 +1176,12 @@ i{
     
     .wrapper-omen{
         top: 52%;
+    }
+
+    /* SECTION NEWS */
+
+    .news::after{
+        opacity: 0;
     }
 
     /* SECTION AGENTS */
