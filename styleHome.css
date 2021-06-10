@@ -1265,6 +1265,7 @@ i{
     .title-button{
         margin: 4rem 0rem 0rem;
     }
+
     .title-border-button{
         width: 16rem;
     }
@@ -1279,12 +1280,15 @@ i{
     .news .title h1{
         font-size: 50pt;
     }
+
     .board-wrapper{
         padding: 2rem 0rem;
     }
+
     .board{
         height: 16rem;
     }
+    
     .image .button-image button{
         margin-right: 0.5rem;
     }
