@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     const getUrl = new URL(window.location.href).searchParams.get('agents') || 0, putActive = Array.from(document.querySelectorAll('.slide'));
 
     for(let i = 0; i < putActive.length; i++){
