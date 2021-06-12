@@ -158,6 +158,10 @@ input:focus{
     transition: .3s;
 }
 
+.home-button:hover{
+    opacity:0.8;
+}
+
 @media screen and (min-width: 1600px) {
     body{
         width: 1600px;
