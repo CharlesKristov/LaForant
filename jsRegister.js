@@ -187,6 +187,9 @@ function validateConfirmPassword(){
     else if(password != confirmPassword){
         confirmPasswordError.innerHTML = "Password and Confirm Password don't Match!"
     }
+    else if(!validatePassword()){
+        confirmPasswordError.innerHTML = "Password doesn't meet requirements!"
+    }
     else{
         confirmPasswordError.classList.add('hidden')
         confirmPasswordCk.classList.remove('hidden')

@@ -36,10 +36,7 @@ img{
 
 #body{
     margin: auto;
-    background-image: url('assets/agents/bgAgents.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url('assets/agents/bgAgents.png'), linear-gradient(to bottom right, #9575ff 35%, #a93bf4 65%);
     position: relative;
 }
 
@@ -56,16 +53,6 @@ img{
 .slider-outer{
     display: flex;
     padding: 1rem;
-}
-
-.arrow img{
-    width: 12rem;
-    padding: 8px;
-}
-
-.arrow img:hover{
-    background-color: rgba(121, 58, 139, 0.555);
-    transition: 0.5s;
 }
 
 .prev, .next{
@@ -176,11 +163,11 @@ img{
 }
 
 .abilityDesc{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .lonkBoi{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .astraLargeBoi img{
@@ -193,12 +180,32 @@ img{
     margin: 20px 0;
 }
 
+.fa-chevron-right, .fa-chevron-left{
+    padding: 0 1rem;
+    color: black;
+}
+
 @media screen and (max-width: 800px){
+    .title, .agent-name{
+        text-align: center;
+    }
+    .slide{
+        padding-top: 1rem;
+    }
     .slide-top{
         display: inline-block;
     }
     .slide-left, .slide-right{
         width: 100%;
+    }
+    .agent-name, .ability-title{
+        font-size: 44px;
+    }
+    .desc{
+        font-size: 26px;
+    }
+    .abilityDesc{
+        font-size: 18px;
     }
     .slide-mid img{
         display: inline-block;
@@ -206,17 +213,11 @@ img{
     .slider-inner .active{
         display: inline-block;
     }
-    .arrow img{
-        width: 100%;
-    }
     .slide-mid{
         margin: 2rem 0;
     }
     .abilities{
         margin-bottom: 2rem;
-    }
-    .arrow img{
-       padding: 0;
     }
     .sect2{
         width: auto;
