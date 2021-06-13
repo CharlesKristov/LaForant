@@ -37,7 +37,7 @@ $(document).ready(function(){
     //hover function for abilities
     var delet = $('.yes');
     var overlay1 = $('.overlay1');
-    var overlay3 = $('.overlay3');
+    var overlay2 = $('.overlay2');
     var overlay3 = $('.overlay3');
     var overlay4 = $('.overlay4');
     $('.card1').hover(function(){
@@ -49,13 +49,13 @@ $(document).ready(function(){
         overlay1.addClass('overlay1').css('opacity', -1);
     });
 
-    $('.card3').hover(function(){
+    $('.card2').hover(function(){
         delet.addClass('yes').css('opacity', 0);
         delet.addClass('yes').css('transition', "0.5s");
-        overlay3.addClass('overlay3').css('opacity', 1); 
+        overlay2.addClass('overlay2').css('opacity', 1); 
     }, function(){
         delet.addClass('yes').css('opacity', "100%");
-        overlay3.addClass('overlay3').css('opacity', -1);
+        overlay2.addClass('overlay2').css('opacity', -1);
     });
 
     $('.card3').hover(function(){
