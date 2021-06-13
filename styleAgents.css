@@ -55,16 +55,6 @@ img{
     padding: 1rem;
 }
 
-.arrow img{
-    width: 12rem;
-    padding: 8px;
-}
-
-.arrow img:hover{
-    background-color: rgba(121, 58, 139, 0.555);
-    transition: 0.5s;
-}
-
 .prev, .next{
     float: left;
     cursor: pointer;
@@ -190,6 +180,11 @@ img{
     margin: 20px 0;
 }
 
+.fa-chevron-right, .fa-chevron-left{
+    padding: 0 1rem;
+    color: black;
+}
+
 @media screen and (max-width: 800px){
     .title, .agent-name{
         text-align: center;
@@ -218,17 +213,11 @@ img{
     .slider-inner .active{
         display: inline-block;
     }
-    .arrow img{
-        width: 100%;
-    }
     .slide-mid{
         margin: 2rem 0;
     }
     .abilities{
         margin-bottom: 2rem;
-    }
-    .arrow img{
-       padding: 0;
     }
     .sect2{
         width: auto;
