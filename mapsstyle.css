@@ -30,10 +30,27 @@
 .body{
     width: 100%;
     margin:0 auto;
-    background-image: url(assets/maps/mapsbg.jpg);
+    background-image: linear-gradient(to bottom right, #9575ff 35%, #a93bf4 65%);
     background-size: cover;
     background-repeat: no-repeat;
     color:white;
+    position:relative;
+    z-index: 1;
+}
+
+.body::before{
+    content: 'MAPS';
+    position: absolute;
+    font-size: 120pt;
+    top: 45rem;
+    left: 0;
+    color: #9575ff;
+    font-family: 'quantico';
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    z-index: 0;
+    transform: rotate(90deg);
 }
 
 .bodytop{
@@ -69,7 +86,7 @@
 }
 
 .list p{
-    background-color: rgb(77, 10, 104);
+    background-color: #a93bf4;
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 3px;
@@ -98,7 +115,7 @@
 }
 
 .desctitle h2{
-    background-color: purple;
+    background-color: #a93bf4;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     padding:5px;
     color:white;
@@ -277,7 +294,7 @@
 }
 
 .bluetitle{
-    background-color: purple;
+    background-color: #a93bf4;
     color: white;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
     font-family: 'quantico bold';
@@ -309,7 +326,7 @@
 }
 
 .galtitle h2{
-    background-color: purple;
+    background-color: #a93bf4;
     padding: 5px;
     color: white;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
@@ -404,6 +421,7 @@
     html{
         background-color: #dddddd;
     }
+    
 }
 
 
@@ -426,6 +444,45 @@
 
     .game-rated{
         margin: auto;
+    }
+    .descbox{
+        display: flex;
+        flex-direction:row;
+        text-align:center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .descimg img {
+        width: 520px;
+        margin: 30px;
+        box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 50%);
+        box-sizing: border-box;
+    }
+
+    .imgblue img {
+        margin: 20px;
+        width: 280px;
+        box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 50%);
+    }
+
+    .list {
+        font-size: 15pt;
+    }
+    
+    .body::before {
+        content: 'MAPS';
+        position: absolute;
+        font-size: 60pt;
+        top: 40rem;
+        left: 0;
+        color: #9575ff;
+        font-family: 'quantico';
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+        z-index: 0;
+        transform: rotate(90deg);
     }
 }
 
@@ -450,5 +507,57 @@
 
     .wrapper-button-burger{
         display: flex;
+    }
+
+    .descbox{
+        display: flex;
+        flex-direction:column;
+        text-align:center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .descimg img {
+        width: 320px;
+        margin: 15px;
+        box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 50%);
+        box-sizing: border-box;
+    }
+
+    .descimg {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgblue img {
+        margin: 15px;
+        width: 280px;
+        box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 50%);
+    }
+
+    .list {
+        font-size: 8pt;
+    }
+
+    .bodydesc{
+        text-align:center;
+    }
+
+    .body::before {
+        content: 'MAPS';
+        position: absolute;
+        font-size: 35pt;
+        top: 55rem;
+        left: 0;
+        color: #9575ff;
+        font-family: 'quantico';
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        z-index: 0;
+        transform: rotate(
+    90deg
+    );
     }
 }

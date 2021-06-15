@@ -149,13 +149,18 @@ input:focus{
 }
 
 #pre-register-button{
-    background-color: #af92b4;
-    padding: 10px;
+    background-color: #9575ff;
+    padding: 10px;  
+    color: #ffffff;
 }
 
 #pre-register-button:hover{
-    background-color: #b34ab3;
+    background-color: #a93bf4;
     transition: .3s;
+}
+
+.home-button:hover{
+    opacity:0.8;
 }
 
 @media screen and (min-width: 1600px) {
