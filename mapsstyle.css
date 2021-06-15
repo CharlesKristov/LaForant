@@ -35,6 +35,7 @@
     background-repeat: no-repeat;
     color:white;
     position:relative;
+    z-index: 1;
 }
 
 .body::before{
