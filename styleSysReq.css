@@ -256,9 +256,11 @@ a > img{
 }
 
 @media screen and (max-width: 1200px){
+
     .upperbody{
         height: 36rem;
     }
+
     .phoenix{
         width: 33rem;
     }
@@ -268,7 +270,7 @@ a > img{
     }
 
     .upperbody::before{
-        font-size: 160pt;
+        font-size: 120pt;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -353,18 +355,39 @@ a > img{
     
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px){
+    .upperbody::before{
+        font-size: 85pt;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .upperbody::before{
+        font-size: 57pt;
+        top: 5rem;
+    }
+
     .upperbody::after{
         width: 8rem;
         height: 30rem;
     }
-}
-
-@media screen and (max-width: 460px){
-    .upperbody .title{
-        font-size: 25pt;
+    
+    .phoenix{
+        top: 8rem;
+        width: 30rem;
     }
 }
+
+@media screen and (max-width: 480px){  
+    .phoenix{
+        width: 25rem;
+    }
+
+    .upperbody{
+        height: 34rem;
+    }
+}
+
 
 @media screen and (max-width: 460px){
     .lowerbody .title .text{
@@ -373,13 +396,18 @@ a > img{
 }
 
 @media screen and (max-width: 410px){
+
     .upperbody::before{
         font-size: 50pt;
         transform: translate(-50%, 4rem);
     }
     
     .upperbody{
-        height: 28rem;
+        height: 30rem;
+    }
+
+    .upperbody .title{
+        font-size: 25pt;
     }
 
     .upperbody::after{
@@ -398,5 +426,25 @@ a > img{
     .lowerbody .title .text{
         font-size: 30pt;
     }
+/* 
+    .real-wrapper-card div:first-child{
+        padding-bottom: 1rem;
+    }
+
+    .real-wrapper-card div:first-child h2{
+        font-size: 20px;
+    }
+
+    .real-wrapper-card div:first-child *:nth-child(2){
+        font-size: 35pt;
+    }
+
+    .real-wrapper-card div:first-child h3, .real-wrapper-card div:not(:first-child) h3:first-child{
+        font-size: 16px;
+    } 
+
+    .real-wrapper-card div:not(:first-child) h3:not(:first-child){
+        font-size: 14px;
+    } */
 }
 
