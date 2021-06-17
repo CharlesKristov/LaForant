@@ -478,16 +478,16 @@ i{
 .news::after{
     content: 'LAFORANT';
     position: absolute;
-    font-size: 255pt;
-    top: 15rem;
-    left: -5rem;
+    font-size: 240pt;
+    top: 18rem;
+    left: -8rem;
     color: #9575ff;
-    font-family: 'quantico';
+    font-family: 'valorant';
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #9575ff;
     z-index: -1;
-    transform: rotate(30deg);
+    transform: rotate(27deg);
 }
 
 .news .title{
@@ -1064,10 +1064,10 @@ i{
     /* SECTION NEWS */
 
     .news::after{
-        top: 16rem;
-        left: -8rem;
-        font-size: 225pt;
-        transform: rotate(35deg);
+        top: 19rem;
+        left: -7rem;
+        font-size: 200pt;
+        transform: rotate(32deg);
     }
 
     /* SECTION AGENTS */
@@ -1467,7 +1467,6 @@ i{
 
     .image-jett-res{
         right: -4.5rem;
-        
     }
 
     .image-raze-res{
