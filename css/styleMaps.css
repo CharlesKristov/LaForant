@@ -561,3 +561,9 @@
     );
     }
 }
+
+@media screen and (max-width: 430px){
+    .body::before{
+        content: "";
+    }
+}

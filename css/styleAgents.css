@@ -186,7 +186,7 @@ img{
 
 .fa-chevron-right, .fa-chevron-left{
     padding: 0 1rem;
-    color: black;
+    color: white;
 }
 
 @media screen and (max-width: 800px){
