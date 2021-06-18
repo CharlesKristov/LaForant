@@ -70,11 +70,7 @@ window.onload = function() {
     span[3].onclick = function() { 
       modal4.style.display = "none";
     }
-
-   
-
-
-
+    
     var arrmaps=[
       {
         'mapname': 'ASCENT',
