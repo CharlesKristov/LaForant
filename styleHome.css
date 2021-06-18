@@ -30,6 +30,17 @@
     font-weight: 100;
 }
 
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #a93bf4;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+}
 a{
     text-decoration: none;
 }
@@ -264,6 +275,18 @@ i{
     font-size: 20pt;
 }
 
+.wrapper-content-sidebar::-webkit-scrollbar{
+    width: 8px;
+}
+
+.wrapper-content-sidebar::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+.wrapper-content-sidebar::-webkit-scrollbar-track{
+    background-color: #9575ff;
+}
+
 .wrapper-content-sidebar{
     overflow-y: scroll;
     scrollbar-width: thin;
@@ -478,20 +501,20 @@ i{
 .news::after{
     content: 'LAFORANT';
     position: absolute;
-    font-size: 255pt;
-    top: 15rem;
-    left: -5rem;
+    font-size: 240pt;
+    top: 18rem;
+    left: -8rem;
     color: #9575ff;
-    font-family: 'quantico';
+    font-family: 'valorant';
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #9575ff;
     z-index: -1;
-    transform: rotate(30deg);
+    transform: rotate(27deg);
 }
 
 .news .title{
-    padding: 2rem;
+    padding: 2rem 0rem;
     font-family: 'righteous';
     color: #9575ff;
     font-size: 50pt;
@@ -510,8 +533,7 @@ i{
 }
 
 .board{
-    width: 35em;
-    height: 25rem;
+    width: 30rem;
 }
 
 .slide-image::before{
@@ -538,25 +560,11 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 
 .slide-image img{
     width: 100%;
     height: 100%;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: 0.2} 
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: 0.2} 
-    to {opacity: 1}
 }
 
 .image{
@@ -577,11 +585,11 @@ i{
     background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     left: 0;
-    border-radius: 0.2rem;
+    clip-path: polygon(0 0, 92% 0, 100% 26%, 100% 100%, 0 100%);
     opacity: 0;
     transition: 0.5s;
     z-index: 2;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .image:hover .detail-image{
@@ -595,7 +603,7 @@ i{
 .NT{
     background-color: rgba(0, 0, 0, 0.4);
     padding: 2rem;
-
+    height: 20rem;
 }
 
 .board-text-wrapper{
@@ -666,6 +674,7 @@ i{
 .board-text-more a span{
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
+    padding-left: 1rem;
 }
 
 .wrapper-count{
@@ -825,7 +834,7 @@ i{
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 2rem 4rem;
 }
 
@@ -855,11 +864,13 @@ i{
 .maps-sub-title{
     padding: 2rem 0rem 1.5rem 0rem;
     font-family: 'quantico';
+    font-size: 24px;
 }
 
 .maps-detail{
     padding-right: 1rem;
     font-family: 'quantico';
+    font-size: 18px;
 }
 
 .maps-button{
@@ -942,13 +953,14 @@ i{
     align-items: center;
     padding: 2rem 4rem;
     background-color: white;
+    gap: 1rem;
 }
 
 .sect1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    flex-wrap: wrap;
 }
 
 .sect1 img{
@@ -957,8 +969,6 @@ i{
 
 .img-contact-wrapper{
     display: flex;
-    border-left: 2px solid #dddddd;
-    padding: 1.5rem 0rem;
 }
 
 .contact{
@@ -967,11 +977,10 @@ i{
 }
 
 .sect2{
+    display: flex;
+    flex-direction: column;
     width: 40rem;
-}
-
-.sect2 p{
-    margin: 1rem 0rem;
+    gap: 1rem;
 }
 
 .terms .start{
@@ -996,7 +1005,6 @@ i{
 }
 
 /* RESPONSIVE */
-
 
 @media screen and (min-width: 1536px) {
     body{
@@ -1076,6 +1084,15 @@ i{
         margin: 1rem 4rem 4rem;
     }
 
+    /* SECTION NEWS */
+
+    .news::after{
+        top: 19rem;
+        left: -7rem;
+        font-size: 200pt;
+        transform: rotate(32deg);
+    }
+
     /* SECTION AGENTS */
 
     .agents-desktop{
@@ -1101,7 +1118,7 @@ i{
 
     .agents-detail{
         padding: 0rem;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .image-raze-res, .image-jett-res{
@@ -1129,12 +1146,7 @@ i{
     }
 
     .agents-button-a{
-        font-size: 20pt;
         padding: 0.5rem 3rem;
-    }
-
-    .agents-button-a{
-        font-size: 16pt;
     }
 
     /* FOOTER */
@@ -1148,20 +1160,31 @@ i{
         text-align: center;
     }
 
-    .sect2 p{
-        margin: 2rem 0rem;
-    }
-
     .game-rated{
         margin: auto;
     }
 }
 
+@media screen and (max-width: 1088px){
+    /* NEWS */
+    .detail-image h2{
+        font-size: 18px;
+    }
+
+    .detail-image h4{
+        font-size: 16px;
+    }
+}
+
 
 @media screen and (max-width: 900px){
-    .agents, .maps{
+    /* GLOBAL */
+    
+    .agents, .maps, .pre-reg, .footer{
         padding: 2rem 2rem 2.5rem;
     }
+
+    /* SECTION HEADER */
 
     .wrapper-button-navbar{
         display: none;
@@ -1183,8 +1206,20 @@ i{
         display: flex;
     }
 
+    /* SECTION PRE REG */
+    
     .wrapper-omen{
         top: 52%;
+    }
+
+    /* SECTION NEWS */
+
+    .news::after{
+        opacity: 0;
+    }
+
+    .news .title h1{
+        font-size: 75pt;
     }
 
     /* SECTION AGENTS */
@@ -1193,13 +1228,8 @@ i{
         width: 20rem;
     }
 
-    .agents-detail{
-        font-size: 16px;
-    }
-
     .agents-button-a{
         font-size: 14pt;
-        padding: 0.5rem 3rem;
     }
 
     .agents-title-wrapper{
@@ -1229,13 +1259,17 @@ i{
         padding-top: 3rem;
     }
 
+    .maps-sub-title{
+        font-size: 20px;
+    }
+
     .maps-detail{
         padding: 0;
+        font-size: 16px;
     }
 
     .maps-button{
         position: absolute;
-        bottom: 2rem;
         margin: 0;
         bottom: 4rem;
         left: 50%;
@@ -1253,5 +1287,232 @@ i{
 
     .maps-sub-title{
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    /* PRE REG */
+    .pre-reg, .news, .agents, .maps, .footer{
+        padding: 2rem 1rem;
+    }
+
+    .title-nondesk{
+        font-size: 80pt;
+    }
+
+    .sub-title h2{
+        font-size: 24pt;
+        margin: 1rem 2rem 2rem;
+    }
+
+    /* NEWS */
+
+    .detail-image{
+        opacity: 1;
+    }
+
+    /* AGENTS */
+
+    .agents-title-wrapper{
+        width: unset;
+    }
+
+    .image-jett-res{
+        right: -4rem;
+    }
+
+    .image-raze-res{
+        left: -4rem;
+    }
+
+    /* FOOTER */
+    .sect1, .sect2{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* PRE REG */
+
+    .title-nondesk{
+        font-size: 65pt;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /* PRE REG */
+    
+    .pre-reg .wrapper-omen .img-omen{
+        width: 24rem;
+    }
+
+    .title-nondesk{
+        font-size: 55pt;
+    }
+
+    .sub-title h2{
+        font-size: 20pt;
+        margin: 0;
+    }
+
+    .title-button{
+        margin: 2rem 0rem 0rem;
+    }
+
+    /* NEWS */
+
+    .NT{
+        height: 18rem;
+    }
+
+    .news .title h1{
+        font-size: 65pt;
+    }
+
+    .detail-image{
+        height: 45%;
+    }
+
+    .detail-image h2{
+        font-size: 16px;
+    }
+
+    .detail-image h4{
+        font-size: 14px;
+    }
+
+    .board-text-more a{
+        font-size: 14px;
+    }
+
+    .board-text-more a span{
+        font-size: 14px;
+    }
+
+    /* AGENTS */
+
+    .agents-title{
+        font-size: 55pt;
+    }
+
+    .agents-image-wrapper img{
+        width: 17rem;
+        filter: none;
+    }
+
+    /* MAPS */
+
+    .maps-wrapper-title{
+        padding-top: 1rem;
+    }
+
+    .maps-title{
+        font-size: 55pt;
+    }
+
+    .maps-button{
+        bottom: 2rem;
+        width: 16rem;
+    }
+
+    .maps-button-a{
+        padding: 0.5rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    /* PRE REG */
+
+    .title-nondesk{
+        font-size: 50pt;
+    }
+
+    .sub-title h2{
+        font-size: 16pt;
+    }
+
+    .pre-reg .wrapper-omen .img-omen{
+        width: 20rem;
+    }
+
+    .triangle{
+        border: 3rem solid white;
+        border-right: 3rem solid transparent;
+        border-top: 3rem solid transparent;
+    }
+
+    .title-button{
+        margin: 4rem 0rem 0rem;
+    }
+
+    .title-border-button{
+        width: 16rem;
+    }
+
+    .title-button-a{
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+    }
+
+    /* NEWS */
+
+    .detail-image{
+        height: 35%;
+    }
+
+    .news .title h1{
+        font-size: 50pt;
+    }
+
+    .board-wrapper{
+        padding: 2rem 0rem;
+    }
+
+    .board{
+        height: 16rem;
+    }
+    
+    .image .button-image button{
+        margin-right: 0.5rem;
+    }
+
+    .image .button-image button i{
+        font-size: 25pt;
+    }
+
+    /* AGENTS */
+
+    .agents-image-wrapper img{
+        width: 16rem;
+    }
+
+    .image-jett-res{
+        right: -4.5rem;
+    }
+
+    .image-raze-res{
+        left: -4.5rem;
+    }
+
+    .agents-title-wrapper{
+        width: 20rem;
+    }
+
+    .agents-title{
+        font-size: 50pt;
+    }
+
+    /* MAPS */
+
+    .maps-title{
+        font-size: 50pt;
+    }
+
+    /* FOOTER */
+
+    .sect2{
+        font-size: 14px;
     }
 }

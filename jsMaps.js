@@ -151,6 +151,13 @@ window.onload = function() {
     
     ];
 
+    var urlParameter = new URL(window.location.href).searchParams.get('map') || 'all';
+
+    if(!urlParameter) {
+      throw new Error("Parameter isn't defined.");
+    }
+    
+    if(urlParameter === 'all') {
       document.getElementById("mapname").innerHTML = arrmaps[0].mapname;
       document.getElementById("teks").innerHTML = arrmaps[0].mapname;
       document.getElementById("teks2").innerHTML = arrmaps[0].mapname;
@@ -165,6 +172,26 @@ window.onload = function() {
       document.getElementById("NormalImg2").src = arrmaps[0].imgBP;
       document.getElementById("NormalImg3").src = arrmaps[0].imgGal1;
       document.getElementById("NormalImg4").src = arrmaps[0].imgGal2;
+    }else {
+      var currentMapIndex = arrmaps.findIndex(function (map) {
+        return urlParameter.toUpperCase() === map.mapname.toUpperCase();
+      })
+
+      document.getElementById("mapname").innerHTML = arrmaps[currentMapIndex].mapname;
+      document.getElementById("teks").innerHTML = arrmaps[currentMapIndex].mapname;
+      document.getElementById("teks2").innerHTML = arrmaps[currentMapIndex].mapname;
+      document.getElementById("teks3").innerHTML = arrmaps[currentMapIndex].mapname;
+      document.getElementById("teks4").innerHTML = arrmaps[currentMapIndex].mapname;
+      document.getElementById("mapdef").innerHTML = arrmaps[currentMapIndex].mapdef;
+      document.getElementById("mapBP").innerHTML = arrmaps[currentMapIndex].mapBP;
+      document.getElementById("mapMG").innerHTML = arrmaps[currentMapIndex].mapMG;
+      document.getElementById("MG1").innerHTML = arrmaps[currentMapIndex].MG1;
+      document.getElementById("MG2").innerHTML = arrmaps[currentMapIndex].MG2;
+      document.getElementById("NormalImg").src = arrmaps[currentMapIndex].img1;
+      document.getElementById("NormalImg2").src = arrmaps[currentMapIndex].imgBP;
+      document.getElementById("NormalImg3").src = arrmaps[currentMapIndex].imgGal1;
+      document.getElementById("NormalImg4").src = arrmaps[currentMapIndex].imgGal2;
+    }
 
     var funcAscent = document.getElementById("funcAscent");
 
@@ -184,43 +211,6 @@ window.onload = function() {
       document.getElementById("NormalImg3").src = arrmaps[0].imgGal1;
       document.getElementById("NormalImg4").src = arrmaps[0].imgGal2;
     }
-    var funcAscentNav = document.getElementById("funcAscentNav");
-
-    funcAscentNav.onclick = function() {
-      document.getElementById("mapname").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks2").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks3").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks4").innerHTML = arrmaps[0].mapname;
-      document.getElementById("mapdef").innerHTML = arrmaps[0].mapdef;
-      document.getElementById("mapBP").innerHTML = arrmaps[0].mapBP;
-      document.getElementById("mapMG").innerHTML = arrmaps[0].mapMG;
-      document.getElementById("MG1").innerHTML = arrmaps[0].MG1;
-      document.getElementById("MG2").innerHTML = arrmaps[0].MG2;
-      document.getElementById("NormalImg").src = arrmaps[0].img1;
-      document.getElementById("NormalImg2").src = arrmaps[0].imgBP;
-      document.getElementById("NormalImg3").src = arrmaps[0].imgGal1;
-      document.getElementById("NormalImg4").src = arrmaps[0].imgGal2;
-    }
-    var funcAscentMap = document.getElementById("funcAscentMap");
-
-    funcAscentMap.onclick = function() {
-      document.getElementById("mapname").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks2").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks3").innerHTML = arrmaps[0].mapname;
-      document.getElementById("teks4").innerHTML = arrmaps[0].mapname;
-      document.getElementById("mapdef").innerHTML = arrmaps[0].mapdef;
-      document.getElementById("mapBP").innerHTML = arrmaps[0].mapBP;
-      document.getElementById("mapMG").innerHTML = arrmaps[0].mapMG;
-      document.getElementById("MG1").innerHTML = arrmaps[0].MG1;
-      document.getElementById("MG2").innerHTML = arrmaps[0].MG2;
-      document.getElementById("NormalImg").src = arrmaps[0].img1;
-      document.getElementById("NormalImg2").src = arrmaps[0].imgBP;
-      document.getElementById("NormalImg3").src = arrmaps[0].imgGal1;
-      document.getElementById("NormalImg4").src = arrmaps[0].imgGal2;
-    }
-
     var funcSplit = document.getElementById("funcSplit");
 
     funcSplit.onclick = function() {
@@ -276,24 +266,6 @@ window.onload = function() {
       document.getElementById("NormalImg3").src = arrmaps[3].imgGal1;
       document.getElementById("NormalImg4").src = arrmaps[3].imgGal2;
     }
-    var funcIceboxNav = document.getElementById("funcIceboxNav");
-
-    funcIceboxNav.onclick = function() {
-      document.getElementById("mapname").innerHTML = arrmaps[3].mapname;
-      document.getElementById("teks").innerHTML = arrmaps[3].mapname;
-      document.getElementById("teks2").innerHTML = arrmaps[3].mapname;
-      document.getElementById("teks3").innerHTML = arrmaps[3].mapname;
-      document.getElementById("teks4").innerHTML = arrmaps[3].mapname;
-      document.getElementById("mapdef").innerHTML = arrmaps[3].mapdef;
-      document.getElementById("mapBP").innerHTML = arrmaps[3].mapBP;
-      document.getElementById("mapMG").innerHTML = arrmaps[3].mapMG;
-      document.getElementById("MG1").innerHTML = arrmaps[3].MG1;
-      document.getElementById("MG2").innerHTML = arrmaps[3].MG2;
-      document.getElementById("NormalImg").src = arrmaps[3].img1;
-      document.getElementById("NormalImg2").src = arrmaps[3].imgBP;
-      document.getElementById("NormalImg3").src = arrmaps[3].imgGal1;
-      document.getElementById("NormalImg4").src = arrmaps[3].imgGal2;
-    }
     var funcBreeze = document.getElementById("funcBreeze");
     
     funcBreeze.onclick = function() {
@@ -312,25 +284,6 @@ window.onload = function() {
       document.getElementById("NormalImg3").src = arrmaps[4].imgGal1;
       document.getElementById("NormalImg4").src = arrmaps[4].imgGal2;
     }
-    var funcBreezeNav = document.getElementById("funcBreezeNav");
-    
-    funcBreezeNav.onclick = function() {
-      document.getElementById("mapname").innerHTML = arrmaps[4].mapname;
-      document.getElementById("teks").innerHTML = arrmaps[4].mapname;
-      document.getElementById("teks2").innerHTML = arrmaps[4].mapname;
-      document.getElementById("teks3").innerHTML = arrmaps[4].mapname;
-      document.getElementById("teks4").innerHTML = arrmaps[4].mapname;
-      document.getElementById("mapdef").innerHTML = arrmaps[4].mapdef;
-      document.getElementById("mapBP").innerHTML = arrmaps[4].mapBP;
-      document.getElementById("mapMG").innerHTML = arrmaps[4].mapMG;
-      document.getElementById("MG1").innerHTML = arrmaps[4].MG1;
-      document.getElementById("MG2").innerHTML = arrmaps[4].MG2;
-      document.getElementById("NormalImg").src = arrmaps[4].img1;
-      document.getElementById("NormalImg2").src = arrmaps[4].imgBP;
-      document.getElementById("NormalImg3").src = arrmaps[4].imgGal1;
-      document.getElementById("NormalImg4").src = arrmaps[4].imgGal2;
-    }
-
     var funcBind = document.getElementById("funcBind");
     
     funcBind.onclick = function() {
@@ -350,24 +303,5 @@ window.onload = function() {
       document.getElementById("NormalImg4").src = arrmaps[5].imgGal2;
     }
     
-    var funcBindNav = document.getElementById("funcBindNav");
-    
-    funcBindNav.onclick = function() {
-      document.getElementById("mapname").innerHTML = arrmaps[5].mapname;
-      document.getElementById("teks").innerHTML = arrmaps[5].mapname;
-      document.getElementById("teks2").innerHTML = arrmaps[5].mapname;
-      document.getElementById("teks3").innerHTML = arrmaps[5].mapname;
-      document.getElementById("teks4").innerHTML = arrmaps[5].mapname;
-      document.getElementById("mapdef").innerHTML = arrmaps[5].mapdef;
-      document.getElementById("mapBP").innerHTML = arrmaps[5].mapBP;
-      document.getElementById("mapMG").innerHTML = arrmaps[5].mapMG;
-      document.getElementById("MG1").innerHTML = arrmaps[5].MG1;
-      document.getElementById("MG2").innerHTML = arrmaps[5].MG2;
-      document.getElementById("NormalImg").src = arrmaps[5].img1;
-      document.getElementById("NormalImg2").src = arrmaps[5].imgBP;
-      document.getElementById("NormalImg3").src = arrmaps[5].imgGal1;
-      document.getElementById("NormalImg4").src = arrmaps[5].imgGal2;
-    }
-
   };
 

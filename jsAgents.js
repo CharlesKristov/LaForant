@@ -6,7 +6,7 @@ $(document).ready(function(){
             putActive[i].classList.add('active');
         }
     }
-
+    //image slider
     $('.next').on('click', function(){
         var currImg = $('.active');
         var nextImg = currImg.next();
@@ -20,7 +20,6 @@ $(document).ready(function(){
             firstImg.addClass('active').css('z-index', 10);
         }
     });
-
     $('.prev').on('click', function(){
         var currImg = $('.active');
         var prevImg = currImg.prev();
@@ -35,6 +34,7 @@ $(document).ready(function(){
         }
     });
 
+    //hover function for abilities
     var delet = $('.yes');
     var overlay1 = $('.overlay1');
     var overlay2 = $('.overlay2');
@@ -44,8 +44,6 @@ $(document).ready(function(){
         delet.addClass('yes').css('opacity', 0);
         delet.addClass('yes').css('transition', "0.5s");
         overlay1.addClass('overlay1').css('opacity', 1);
-        // overlay1.addClass('overlay1').css('background-color', "rgba(110, 54, 128, 0.555)")
-        
     }, function(){
         delet.addClass('yes').css('opacity', "100%");
         overlay1.addClass('overlay1').css('opacity', -1);
@@ -54,8 +52,7 @@ $(document).ready(function(){
     $('.card2').hover(function(){
         delet.addClass('yes').css('opacity', 0);
         delet.addClass('yes').css('transition', "0.5s");
-        overlay2.addClass('overlay2').css('opacity', 1);
-        
+        overlay2.addClass('overlay2').css('opacity', 1); 
     }, function(){
         delet.addClass('yes').css('opacity', "100%");
         overlay2.addClass('overlay2').css('opacity', -1);
@@ -65,7 +62,6 @@ $(document).ready(function(){
         delet.addClass('yes').css('opacity', 0);
         delet.addClass('yes').css('transition', "0.5s");
         overlay3.addClass('overlay3').css('opacity', 1);
-        
     }, function(){
         delet.addClass('yes').css('opacity', "100%");
         overlay3.addClass('overlay3').css('opacity', -1);
@@ -75,10 +71,38 @@ $(document).ready(function(){
         delet.addClass('yes').css('opacity', 0);
         delet.addClass('yes').css('transition', "0.5s");
         overlay4.addClass('overlay4').css('opacity', 1);
-        
     }, function(){
         delet.addClass('yes').css('opacity', "100%");
         overlay4.addClass('overlay4').css('opacity', -1);
     });
 
+    //change arrow size
+    //when opened
+    if($(window).width() <= 800){
+        $('.prev').removeClass('fa-4x')
+        $('.prev').addClass('fa-3x')
+        $('.next').removeClass('fa-4x')
+        $('.next').addClass('fa-3x')
+    }
+    else{
+        $('.prev').removeClass('fa-3x')
+        $('.prev').addClass('fa-4x')
+        $('.next').removeClass('fa-3x')
+        $('.next').addClass('fa-4x')
+    }
+    //when resized
+    $(window).resize(function(){
+        if($(window).width() <= 800){
+            $('.prev').removeClass('fa-4x')
+            $('.prev').addClass('fa-3x')
+            $('.next').removeClass('fa-4x')
+            $('.next').addClass('fa-3x')
+        }
+        else{
+            $('.prev').removeClass('fa-3x')
+            $('.prev').addClass('fa-4x')
+            $('.next').removeClass('fa-3x')
+            $('.next').addClass('fa-4x')
+        }
+    })
 });
