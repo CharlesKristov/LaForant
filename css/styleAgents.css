@@ -7,15 +7,15 @@
 
 @font-face {
     font-family: valorant;
-    src: url(font/Valorant\ Font.ttf);
+    src: url(../font/Valorant\ Font.ttf);
 }
 @font-face {
     font-family: quantico;
-    src: url(font/Quantico-Regular.ttf);
+    src: url(../font/Quantico-Regular.ttf);
 }
 @font-face {
     font-family: righteous;
-    src: url(font/Righteous-Regular.ttf);
+    src: url(../font/Righteous-Regular.ttf);
 }
 
 a{
@@ -36,7 +36,7 @@ img{
 
 #body{
     margin: auto;
-    background-image: url('assets/agents/bgAgents.png'), linear-gradient(to bottom right, #9575ff 35%, #a93bf4 65%);
+    background-image: url('../assets/agents/bgAgents.png'), linear-gradient(to bottom right, #9575ff 35%, #a93bf4 65%);
     position: relative;
 }
 

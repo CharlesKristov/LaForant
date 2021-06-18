@@ -6,18 +6,18 @@
 }
 
 @font-face {
-    font-family: quantico;
-    src: url(font/Quantico-Regular.ttf);
+    font-family: valorant;
+    src: url(../font/Valorant\ Font.ttf);
 }
 
 @font-face {
-    font-family: valorant;
-    src: url(font/Valorant\Font.ttf);
+    font-family: quantico;
+    src: url(../font/Quantico-Regular.ttf);
 }
 
 @font-face {
     font-family: righteous;
-    src: url(font/Righteous-Regular.ttf);
+    src: url(../font/Righteous-Regular.ttf);
 }
 
 a{

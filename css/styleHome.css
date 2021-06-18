@@ -2,22 +2,22 @@
 
 @font-face{
     font-family: 'valorant';
-    src: url(font/Valorant\ Font.ttf) format('truetype');
+    src: url(../font/Valorant\ Font.ttf) format('truetype');
 }
 
 @font-face{
     font-family: 'quantico';
-    src: url(font//Quantico-Regular.ttf) format('truetype');
+    src: url(../font//Quantico-Regular.ttf) format('truetype');
 }
 
 @font-face{
     font-family: 'quantico bold';
-    src: url(font//Quantico-Bold.ttf) format('truetype');
+    src: url(../font//Quantico-Bold.ttf) format('truetype');
 }
 
 @font-face{
     font-family: 'righteous';
-    src: url(font//Righteous-Regular.ttf) format('truetype');
+    src: url(../font//Righteous-Regular.ttf) format('truetype');
 }
 
 *{
@@ -827,7 +827,7 @@ i{
 /* SECTION 4 */
 
 .maps{
-    background-image: url('assets/home/Icebox.jpg');
+    background-image: url('../assets/home/Icebox.jpg');
     height: 50rem;
     background-position: center;
     background-size: cover;
